@@ -40,13 +40,36 @@
   color: #f5f5f5;
   font-weight: 400;
   font-size: 14px;
+  border-bottom: 3px #ffffff00 solid;
+}
+
+.nav-menu li a:after {
+  content: '';
+  display: block;
+  position:absolute;
+  bottom:15px;
+  left: 50;
+  width: 0px;
+  height: 3px;
+  background: #a2a2ff;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-menu li a:hover {
   color: #a2a2ff;
-  padding-bottom: 5px;
+} 
+
+.nav-menu li a:hover::after {
+  width: 26.5px;
+}
+
+
+span{
+  background-color: #191919;
+  padding-bottom: 7.5px;
   border-bottom: 3px #a2a2ff solid;
-  border-radius: 0.5px;
+  
+  border-radius: 0.9px;
 }
 
 .hambuger {

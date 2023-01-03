@@ -25,15 +25,19 @@ function Navbar() {
                     <ul>
                         <li>
                             <a href="/home">Home</a>
+                            <span></span>
                         </li>
                         <li>
                             <a href="/projects">Projects</a>
+                            <span></span>
                         </li>
                         <li>
                             <a href="/contacts">Contacts</a>
+                            <span></span>
                         </li>
                         <li>
                             <a href="/about">About</a>
+                            <span></span>
                         </li>
                     </ul>
                 </div>

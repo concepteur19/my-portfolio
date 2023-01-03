@@ -2,7 +2,8 @@ import React from "react";
 import "../styles/App.css";
 import Button from "./Button";
 import Navbar from "./Navbar";
-import img from "../assets/pexels-marta-branco-1194713.jpg";
+import Lateralbar from "./Lateralbar";
+//import img from "../assets/pexels-marta-branco-1194713.jpg";
 
 function App() {
   // const [isOver, setMouseOver] = useState(false);
@@ -18,8 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <img src={img} alt="Background" className="img" />
+      <div className="img"></div>
       <Navbar />
+      <Lateralbar />
       <Button
         textArea="Contact"
         style={{
