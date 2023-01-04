@@ -3,7 +3,7 @@ import "../styles/App.css";
 import Button from "./Button";
 import Navbar from "./Navbar";
 import Lateralbar from "./Lateralbar";
-//import img from "../assets/pexels-marta-branco-1194713.jpg";
+import img from "../assets/pexels-marta-branco-1194713.jpg";
 
 function App() {
   // const [isOver, setMouseOver] = useState(false);
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="img"></div>
+      <img src={img} alt="Background" className="img" />
       <Navbar />
       <Lateralbar />
       <Button
