@@ -1,7 +1,22 @@
 .lateral-button {
-    position: absolute;
-    width: 2px;
-    height: 21.25px;
-    top: 50%;
-    left: 50%;
+  width:3.5px;
+  height: 47.5px;
+  background-color: #292929;
+  border: 0.005px solid #f5f5f5;
+  margin: 25px;
+  border-radius: 7px;
+}
+
+.nav-button {
+  width: 100%;
+  position: absolute;
+  display: block;
+  align-items: center;
+  left: 95%;
+  top: 50%;
+}
+
+
+.lateral-button:hover {
+    background-color: #f5f5f5;
 }

@@ -1,42 +1,36 @@
 import React from "react";
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+
 import "../styles/App.css";
-import Button from "./Button";
+
+//import img from "../assets/pexels-marta-branco-1194713.jpg";
+
 import Navbar from "./Navbar";
-import Lateralbar from "./Lateralbar";
-import img from "../assets/pexels-marta-branco-1194713.jpg";
+//import Lateralbar from "./Lateralbar";
+
+import Home from "../pages/home";
+import Projects from "../pages/projects";
+import About from "../pages/about";
+import Contact from "../pages/contact"
+
 
 function App() {
-  // const [isOver, setMouseOver] = useState(false);
-
-  // function handleMouseOver() {
-  //   setMouseOver(true);
-  // }
-
-  // function handleMouseDown() {
-  //   setMouseOver(false);
-  // }
-
 
   return (
     <div className="App">
-      <img src={img} alt="Background" className="img" />
+      {/* <img src={img} alt="Background" className="img" /> */}
+      <div className="img"></div>
       <Navbar />
-      <Lateralbar />
-      <Button
-        textArea="Contact"
-        style={{
-          top: "57.66%",
-          left: "16%",
-        }}
-      />
-
-      <Button
-        textArea="About"
-        style={{
-          top: "42.63%",
-          left: "70%",
-        }}
-      />
+      {/* <Lateralbar /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={ <Projects /> } />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+          
+      </BrowserRouter>
     </div>
   );
 }

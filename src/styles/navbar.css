@@ -3,8 +3,9 @@
   width: 100%;
   position: absolute;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0;
   background-color: #191919;
   color: #f5f5f5;
   top: 0%;
@@ -35,13 +36,19 @@
 
 .nav-menu li a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   width: 100%;
   color: #f5f5f5;
   font-weight: 400;
   font-size: 14px;
+  transition: all 0.0s ease-in-out;
   border-bottom: 3px #ffffff00 solid;
 }
+
+/* .nav-menu a:active {
+ color: #a2a2ff;
+  font-weight: bold;
+} */
 
 .nav-menu li a:after {
   content: '';
@@ -55,7 +62,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.nav-menu li a:hover {
+.active, .nav-menu li a:hover {
   color: #a2a2ff;
 } 
 
@@ -63,31 +70,69 @@
   width: 26.5px;
 }
 
-
-span{
-  background-color: #191919;
-  padding-bottom: 7.5px;
-  border-bottom: 3px #a2a2ff solid;
-  
-  border-radius: 0.9px;
-}
-
 .hambuger {
   border: 0;
-  height: 40px;
+  height: 30px;
+  width: 30px;
   padding: 0.5rem;
   border-radius: 50%;
   background-color: #f5f5f5;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-
+  transition: #f5f5f5 0.2s ease-in-out;
+  display: none;
   position: absolute;
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
-  display: none;
+  
 }
 
-.hamburger:hover {
-  background-color: #a2a2ff;
+.hambuger:hover {
+  background-color: rgb(85, 85, 85);
+  
 }
+
+@media screen and (max-width: 768px) {
+
+  .hambuger {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    
+    flex-direction: column;
+ 
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: #0b185bde;
+    border-top: 1px solid rgb(20, 1, 188);
+  }
+
+  .nav-menu.expanded ul {
+    display: block;
+  }
+
+  .nav-menu li {
+
+    text-align: center;
+    margin: 0;
+  }
+  .nav-menu li a {
+    color: rgb(255, 255, 255);
+  
+    width: 100%;
+    padding: 1.0rem 0;
+  }
+  .nav-menu li:hover {
+    background-color: #19192071;
+  }
+  .nav-menu li a:hover::after {
+    width: 26.5px;
+    display: none;
+  }
+}
+
