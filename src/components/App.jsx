@@ -6,7 +6,7 @@ import "../styles/App.css";
 //import img from "../assets/pexels-marta-branco-1194713.jpg";
 
 import Navbar from "./Navbar";
-//import Lateralbar from "./Lateralbar";
+import Lateralbar from "./Lateralbar";
 
 import Home from "../pages/home";
 import Projects from "../pages/projects";
@@ -21,7 +21,7 @@ function App() {
       {/* <img src={img} alt="Background" className="img" /> */}
       <div className="img"></div>
       <Navbar />
-      {/* <Lateralbar /> */}
+      <Lateralbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

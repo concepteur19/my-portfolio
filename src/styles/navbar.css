@@ -6,9 +6,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  background-color: #191919;
+  background-color: #19191980;
   color: #f5f5f5;
   top: 0%;
+
+}
+.nav-bar a.active {
+  color: #a2a2ff;
+  font-weight: 500;
 }
 
 .logo {
@@ -16,39 +21,50 @@
   color: #f5f5f5;
   font-size: 15px;
   font-weight: bold;
-  font-family: Roboto;
+  font-family: "Roboto";
   margin-left: 25px;
+  z-index: 3;
 }
 
 .nav-menu {
   margin-left: auto;
+  
+  
 }
 
 .nav-menu ul {
   display: flex;
-  padding: 0;
+  padding-left: 5px ;
+  padding-right: 5px;
+  margin-right: 100px;
 }
 
 .nav-menu li {
   list-style-type: none;
-  margin: 0 12px;
+  margin-left: 15px;
+  border-right: 0.5px solid #ccc;
+  padding-right: 15px;
 }
+
+.nav-menu li:last-child {
+  border-right: none;
+}
+
+/* .nav-menu li:not(:first-child) a::before {
+  content: "|";
+  padding-right: 15px;
+} */
 
 .nav-menu li a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
   color: #f5f5f5;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   transition: all 0.0s ease-in-out;
   border-bottom: 3px #ffffff00 solid;
 }
-
-/* .nav-menu a:active {
- color: #a2a2ff;
-  font-weight: bold;
-} */
 
 .nav-menu li a:after {
   content: '';
@@ -62,11 +78,11 @@
   transition: all 0.1s ease-in-out;
 }
 
-.active, .nav-menu li a:hover {
+.nav-menu li a:hover {
   color: #a2a2ff;
 } 
 
-.nav-menu li a:hover::after {
+.nav-menu li a:hover:after {
   width: 26.5px;
 }
 
@@ -92,24 +108,58 @@
   
 }
 
+/* afficher certains styles lors que la largeur de l'écran est
+inférieure ou égale à 768*/
 @media screen and (max-width: 768px) {
 
   .hambuger {
     display: flex;
+    z-index: 3;
   }
 
   .nav-menu ul {
     display: none;
     position: absolute;
-    top: 50px;
+    top: -15px;
     left: 0;
     
     flex-direction: column;
- 
+    
+    /* definir la hauteur d'un elt cda premier plan ou arriere*/
+    z-index: 2;
+
     width: 100%;
     height: calc(100vh - 77px);
     background-color: #0b185bde;
     border-top: 1px solid rgb(20, 1, 188);
+
+    /* avec les keyframe permet de gerer les animation avec une durée
+    une certaine vitesse et un style*/
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function:ease-in-out;
+
+  }
+
+  .nav-menu li a:after {
+    display: none;
+  }
+
+  @keyframes fade-in {
+
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+    /* from {
+      
+      opacity: 0;
+    }
+    to {
+      
+      opacity: 1;
+    } */
   }
 
   .nav-menu.expanded ul {
@@ -130,9 +180,6 @@
   .nav-menu li:hover {
     background-color: #19192071;
   }
-  .nav-menu li a:hover::after {
-    width: 26.5px;
-    display: none;
-  }
+  
 }
 

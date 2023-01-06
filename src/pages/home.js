@@ -16,7 +16,7 @@ function Home() {
         textArea="About"
         style={{
           top: "42.63%",
-          left: "70%",
+          left: "75%",
         }}
       />
     </div>

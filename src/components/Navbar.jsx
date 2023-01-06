@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "../styles/navbar.css";
 
 function Navbar() {
@@ -7,6 +7,18 @@ function Navbar() {
   function handleClick() {
     setGotClicked(!gotClicked);
   }
+  const [pathname, setPathname] = useState(window.location.pathname);
+
+  useEffect(() => {
+    function handlePathname () {
+      setPathname(window.location.pathname);
+    };
+    window.addEventListener('popstate', handlePathname);
+
+    return () => {
+      window.removeEventListener('popstate', handlePathname);
+    };
+  }, []);
 
   return (
     <div className="container">
@@ -15,7 +27,7 @@ function Navbar() {
           {" "}
           PORTFOLIO{" "}
         </a>
-        <button onclick={handleClick} className="hambuger">
+        <button onClick={handleClick} className="hambuger">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -33,16 +45,16 @@ function Navbar() {
         <div className={`nav-menu ${gotClicked? "expanded" : ""}`}>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a className={pathname === "/" ? "active" : ""} href="/">Home</a>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <a className={pathname === "/projects" ? "active" : ""} href="/projects">Projects</a>
             </li>
             <li>
-              <a href="/contact">Contacts</a>
+              <a href="/contact" className={pathname === "/contact" ? "active" : ""}>Contact</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about" className={pathname === "/about" ? "active" : ""} >About</a>
             </li>
           </ul>
         </div>
