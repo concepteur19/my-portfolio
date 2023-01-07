@@ -9,9 +9,8 @@ function Button(props) {
             {/* <button onClick={handleClick} onMouseOver={props.over} onMouseDown={props.over}> </button> */}
             <button
                 className="button"
-                // onMouseEnter={handleMouseOver}
-                // onMouseLeave = {handleMouseDown} 
-                //style={isOver? style : {...style, backgroundColor: "#191919", color: "#F5F5F5"}}
+                onMouseEnter={props.mouseOver}
+                onMouseLeave = {props.mouseDown} 
                 style = { props.style }
             > 
                 {props.textArea} 
@@ -22,4 +21,3 @@ function Button(props) {
 
 export default Button;
 
-// isOver? {backgroundColor: "#F5F5F5", color: "#4866FF"}:{backgroundColor: "#191919", color: "#F5F5F5"}

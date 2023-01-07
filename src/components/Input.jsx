@@ -10,14 +10,15 @@ function Input(props) {
     }
 
     return (
-        <div className="contact">
+        <div className="input-contact">
             <input 
-                type="text" 
+                type= {props.type}
+                style={props.style}
+                className={props.class} 
                 name={props.name} 
                 value={inputText} 
                 placeholder={props.texte_grisee} 
                 onChange={handleChange}
-
             />
         </div>
     )

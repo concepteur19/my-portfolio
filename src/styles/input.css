@@ -1,0 +1,13 @@
+.input-contact {
+    margin-bottom: 35px;
+}
+
+input {
+    width: 306.5px;
+    height: 40px;
+    border-radius: 3.5px;
+    border: none;
+    font-family: Poppins;
+    font-size: 12.5px;
+    padding-left: 5px ;
+}
