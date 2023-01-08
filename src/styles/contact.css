@@ -47,7 +47,7 @@ textarea {
     padding-left: 5px ;
 }
 
-h1 {
+.h1 {
     font-family: "Script MT";
     position: absolute;
     top: 22%;
@@ -56,7 +56,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.h2 {
     font-family: "Script MT";
     position: absolute;
     top: 42%;

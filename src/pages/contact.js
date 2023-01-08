@@ -18,9 +18,9 @@ function Contact() {
 
   return (
     <div>
-      <h1>Si vous voulez me contacter, <br /> remplissez le formulaire <br /> ci-contre.</h1>
+      <h1 className="h1">Si vous voulez me contacter, <br /> remplissez le formulaire <br /> ci-contre.</h1>
       <div className="contact">
-        <h2>Contacts :</h2>
+        <h2 className="h2">Contacts :</h2>
         <a href="https://www.linkedin.com/in/zobel-ulrich-nguening-tchomgui-825a01224/">
            <img src="https://icons8.com/icon/114445/linkedin-entour%C3%A9" alt="svg in" />
         </a>
