@@ -34,20 +34,49 @@ div {
     
 }
 
-.h11 {
+.first-line {
+    font-family: "Script MT";
+    font-size: 40px ;
     position: absolute;
-    font-size: 45px;
-    top: -100%;
-    left: 107%;
+    top: 27%;
+    left: 62%;
     color: #f5f5f5;
 }
 
-.h22 {
-    
-    font-family: "Script MT";
-    font-size: 35px ;
+.second-line{
+    font-family: poppins;
+    font-weight: bolder;
+    font-size: 30px ;
     position: absolute;
-    top: 25%;
-    left: 60%;
-    color: #f5f5f5;
+    top: 34%;
+    left: 64%;
+    color: #4866FF;
 }
+
+
+.typewriter {
+    width: 9.5ch;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 3px solid #4866FF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(22, end),
+      blink-caret .5s step-end infinite alternate;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #4866FF }
+  }
+  
+
+ 
