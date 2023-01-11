@@ -35,20 +35,19 @@ div {
 }
 
 .h11 {
-    position: relative;
+    position: absolute;
     font-size: 45px;
-    top: 22%;
-    left: 50%;
+    top: -100%;
+    left: 107%;
     color: #f5f5f5;
-    text-align: center;
 }
 
 .h22 {
+    
     font-family: "Script MT";
     font-size: 35px ;
     position: absolute;
-    top: 22%;
-    left: 50%;
+    top: 25%;
+    left: 60%;
     color: #f5f5f5;
-    text-align: center;
 }

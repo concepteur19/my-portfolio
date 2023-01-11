@@ -12,6 +12,7 @@ function Button(props) {
                 onMouseEnter={props.mouseOver}
                 onMouseLeave = {props.mouseDown} 
                 style = { props.style }
+                type={props.type}
             > 
                 {props.textArea} 
             </button>
