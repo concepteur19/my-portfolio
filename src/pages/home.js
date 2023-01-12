@@ -1,4 +1,6 @@
 import React from "react";
+import TypingText from "../components/TypingText";
+
 import Button from "../components/Button";
 import "../styles/home.css";
 
@@ -22,7 +24,10 @@ function Home() {
 
       <div className="second-block">
         <div className="first-line ">Hey there I'm</div>
-        <div className="second-line typewriter">NGUENING</div>
+        
+        <TypingText 
+          text = "NGUENING" 
+          class = " typing-text1 second-line"/>
         <a href="/about">
           <Button
             textArea="About"
