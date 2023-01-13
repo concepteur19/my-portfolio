@@ -42,3 +42,4 @@ function TypingText() {
   )
 }
 
+export default TypingText;
