@@ -9,14 +9,13 @@ function Home() {
     <div>
       <div className="first-block">
         <h1 className="title">Software Engineer</h1>
-        <h2 className="another-title-h2-1">Fullstack web Developper</h2>
-        <h2 className="another-title-h2-2">Junior web Designer</h2>
+        <h2 className="another-title-h2">Fullstack web Developper <br /> Junior web Designer</h2>
         <a href="/contact">
           <Button
             textArea="Contact"
             style={{
               top: "57.66%",
-              left: "16%",
+              left: "18.5%",
             }}
           />
         </a>
@@ -27,12 +26,12 @@ function Home() {
         
         <TypingText 
           text = "NGUENING" 
-          class = " typing-text1 second-line"/>
+          class = " typing-text second-line"/>
         <a href="/about">
           <Button
             textArea="About"
             style={{
-              top: "42.63%",
+              top: "46%",
               left: "68%",
             }}
           />

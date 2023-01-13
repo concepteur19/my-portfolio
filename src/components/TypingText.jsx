@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
-function TypingText(props) {
-  const text = props.text
-  const [displayText, setDisplayText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
+// function TypingText(props) {
+//   const text = props.text
+//   const [displayText, setDisplayText] = useState("");
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (currentIndex < text.length) {
-        setDisplayText((previousText) => previousText + text[currentIndex]);
-        setCurrentIndex((previousIndex) => previousIndex + 1);
-      }
-    }, 380);
+//   useEffect(() => {
+//     const intervalId = setInterval(() => {
+//       if (currentIndex < text.length) {
+//         setDisplayText((previousText) => previousText + text[currentIndex]);
+//         setCurrentIndex((previousIndex) => previousIndex + 1);
+//       }
+//     }, 380);
 
-    return () => clearInterval(intervalId);
-  }, [text, currentIndex]);
+//     return () => clearInterval(intervalId);
+//   }, [text, currentIndex]);
 
-  return <div className={props.class}> {displayText} </div>;
-}
+//   return <div className={props.class}> {displayText} </div>;
+// }
 
-export default TypingText;
+// export default TypingText;
 
 // synthaxe similaire
 
@@ -33,3 +33,12 @@ export default TypingText;
     }
 
 */
+
+import React from "react";
+
+function TypingText() {
+  return (
+    <div></div>
+  )
+}
+
