@@ -8,8 +8,8 @@ function Home() {
   return (
     <div>
       <div className="first-block">
-        <h1 className="title">Software Engineer</h1>
-        <h2 className="another-title-h2">Fullstack web Developper <br /> Junior web Designer</h2>
+        {/* <h1 className="title">Software Engineer</h1>
+        <h2 className="another-title-h2">Fullstack web Developper <br /> Junior web Designer</h2> */}
         <a href="/contact">
           <Button
             textArea="Contact"

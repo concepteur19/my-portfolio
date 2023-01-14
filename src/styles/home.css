@@ -100,7 +100,7 @@ div {
 }
 
 svg {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 svg:hover {
@@ -109,8 +109,8 @@ svg:hover {
 
 .wrapper {
   position: absolute;
-  top: 70%;
-  left: 30%;
+  top: 30%;
+  left: 10%;
   display: inline-flex;
   
 }
@@ -123,21 +123,53 @@ svg:hover {
 }
 
 .wrapper .dynamic-txts{
+  
   margin-left: 15px;
+  position: relative;
+  top: -32px;
+  left: -30px;
+  height: 90px;
+  line-height: 90px;
+  
+  overflow: hidden; 
 }
 
 .dynamic-txts li{
+  
   list-style: none;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   color: #4866ff;
+  animation: slide 12s steps(4) infinite;
+  position: relative;
+  top: 0;
+}
+
+@keyframes slide{
+  100%{
+    top: -358px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
 }
 
 .dynamic-txts li span::after {
   content: "";
+  background-color: #000;
   position: absolute;
+  left: 0;
+  top: 0%;
   height: 100%;
   width: 100%;
-  left: 0;
   border-left: 2px solid #4866ff;
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
 }

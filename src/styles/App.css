@@ -6,16 +6,16 @@
 }
 
 .img {
-  background: url("../assets/pexels-marta-branco-1194713.jpg") no-repeat center center fixed;
+  background-image: url(../assets/pexels-lenin-estrada-2569997.jpg);
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(5px) brightness(0.5);
-  -webkit-filter: blur(5px) brightness(0.5);
-  -moz-filter: blur(5px) brightness(0.5);
-  -o-filter: blur(5px) brightness(0.5);
-  -ms-filter: blur(5px) brightness(0.5);
+  filter: blur(5px) brightness(1);
+  -webkit-filter: brightness(1);
+  -moz-filter: brightness(1);
+  -o-filter: brightness(1);
+  -ms-filter: brightness(1);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
