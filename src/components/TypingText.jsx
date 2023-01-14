@@ -39,7 +39,7 @@ import React from "react";
 function TypingText() {
   return (
     <div className="wrapper">
-      <div className="static-txt">I'm a</div>
+      <div className="static-txt">a</div>
       <ul className="dynamic-txts">
         <li><span>Software Engineer</span></li>
         <li><span>Fullstack JavaScript</span></li>
