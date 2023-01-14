@@ -1,25 +1,16 @@
 div {
-    font-family: Poppins;
+  font-family: Poppins;
 }
 
 .title {
-    font-size: 40px;
-    font-weight: bold;
-    position: absolute;
-    top: 25%;
-    left: 7%;
-    color: #f5f5f5;
-    text-align: center;
-    animation: slide-right 5s linear forwards;
-}
-
-@keyframes slide-right {
-  from {
-    left: -20%;
-  }
-  to {
-    left: 10;
-  }
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  color: #f5f5f5;
+  text-align: center;
+  animation: slide-right 5s linear forwards;
 }
 
 @keyframes slide-left {
@@ -27,19 +18,19 @@ div {
     left: 80%;
   }
   to {
-    left: -10;
+    left: -5;
   }
 }
 
 .another-title-h2 {
-    font-weight: normal;
-    font-size: 25px;
-    position: absolute;
-    top: 35%;
-    left: 9%;
-    color: #f5f5f5;
-    text-align: center;
-    animation: slide-right 2s linear forwards;
+  font-weight: normal;
+  font-size: 25px;
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  color: #f5f5f5;
+  text-align: center;
+  animation: slide-right 2s linear forwards;
 }
 
 /* button {
@@ -47,16 +38,25 @@ div {
 } */
 
 .first-line {
-    font-family: "Script MT";
-    font-size: 40px ;
-    position: absolute;
-    top: 29%;
-    left: 62%;
-    color: #f5f5f5;
-    animation: slide-left 2s linear forwards;
+  font-family: "Script MT";
+  font-size: 40px;
+  position: absolute;
+  top: 29%;
+  left: 62%;
+  color: #f5f5f5;
+  animation: slide-left 2s linear forwards;
 }
 
-.second-line{
+.first-line span {
+  font-family: Poppins;
+  font-weight: 650;
+  color: #4866ff;
+  position: absolute;
+  top: 120%;
+  left: 5%;
+}
+
+/* .second-line{
     font-weight: bolder;
     font-size: 30px ;
     position: absolute;
@@ -64,38 +64,80 @@ div {
     left: 63.2%;
     color: #4866FF;
     animation: slide-left 2s linear forwards;
+} */
+
+.typing-text {
+  color: #4866ff;
+  overflow: hidden;
+  border-right: 2px solid #4866ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  animation: typing 3s steps(22, end), blink-caret 0.5s step-end infinite;
 }
 
-  .typing-text {
-    color: #4866FF;
-    overflow: hidden;
-    border-right: 2px solid #4866FF;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0.2em;
-    animation: 
-      typing 3s steps(22, end),
-      blink-caret 0.5s step-end infinite;
-  }
-  
-  .typing-text .cursor {
-    animation: blink-caret 0.375s step-end infinite alternate;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 15% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    40% { border-color: #4866FF }
-  }
+.typing-text .cursor {
+  animation: blink-caret 0.375s step-end infinite alternate;
+}
 
-  svg  {
-    opacity: 0.85;
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 15%;
+  }
+}
 
-  svg:hover {
-    opacity: 1;
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  40% {
+    border-color: #4866ff;
+  }
+}
+
+svg {
+  opacity: 0.85;
+}
+
+svg:hover {
+  opacity: 1;
+}
+
+.wrapper {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: inline-flex;
+  
+}
+
+.wrapper .static-txt {
+  font-size: 40px;
+  color: #f5f5f5;
+  font-weight: 400;
+
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  font-size: 40px;
+  font-weight: 700;
+  color: #4866ff;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  border-left: 2px solid #4866ff;
+}

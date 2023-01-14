@@ -22,11 +22,9 @@ function Home() {
       </div>
 
       <div className="second-block">
-        <div className="first-line ">Hey there I'm</div>
+        <div className="first-line ">Hey there I'm <span>NGUENING</span></div>
         
-        <TypingText 
-          text = "NGUENING" 
-          class = " typing-text second-line"/>
+        <TypingText />
         <a href="/about">
           <Button
             textArea="About"
