@@ -10,8 +10,8 @@ body {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #191919;
-  max-width: 80%;
+  background-color: #000000;
+  max-width: 90%;
 }
 
 code {

@@ -1,10 +1,10 @@
 import React from "react";
 
-import SocialMedia from "../components/SocialMedia";
+//import SocialMedia from "../components/SocialMedia";
 import TypingText from "../components/TypingText";
 import Button from "../components/Button";
 
-import img from "../assets/pro.jpeg"
+import img from "../assets/pro.jpeg";
 
 import "../styles/home.css";
 
@@ -24,7 +24,7 @@ function Home() {
         <Button
           textArea="Hire me"
           style={{
-            top: "60%",
+            top: "650px",
             left: "15.5%",
           }}
         />
@@ -34,15 +34,25 @@ function Home() {
         <Button
           textArea="Resume"
           style={{
-            top: "60%",
-            left: "33%",
+            top: "650px",
+            left: "37%",
           }}
         />
       </a>
 
       <img src={img} alt="profile" />
 
-      <SocialMedia />
+      {/* <SocialMedia
+        style={{
+          listStyleType: "none",
+          fontSize: "10px",
+          
+          textAlign: "center",
+          zIndex: "4",
+          color: "#f5f5f5",
+          margin: "10px",
+        }}
+      /> */}
     </div>
   );
 }

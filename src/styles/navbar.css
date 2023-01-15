@@ -171,3 +171,14 @@ inférieure ou égale à 768*/
   
 }
 
+nav span svg {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+.svg-dark {
+  position: absolute;
+  fill: #111111;
+  top: 37%;
+}

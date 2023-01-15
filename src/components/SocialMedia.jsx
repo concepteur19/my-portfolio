@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialMedia(props) {
   return (
-    <p style={props.style}>
+    <div style={props.style}>
       <a
         className="link1"
         href="https://www.linkedin.com/in/zobel-ulrich-nguening-tchomgui-825a01224/"
@@ -106,7 +106,7 @@ function SocialMedia(props) {
         </svg>
         <div>Youtube</div>
       </a>
-    </p>
+    </div>
   );
 }
 

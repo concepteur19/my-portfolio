@@ -6,20 +6,20 @@
 }
 
 .img {
-  background-image: url(../assets/pexels-lenin-estrada-2569997.jpg);
+  /* background-image: url(../assets/pexels-lenin-estrada-2569997.jpg);
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(5px) brightness(0.7);
-  -webkit-filter:blur(5px) brightness(0);
+   filter: blur(5px) brightness(0.7);
+  -webkit-filter:blur(5px) brightness(0.2);
   -moz-filter:blur(5px) brightness(0.7);
   -o-filter:blur(5px) brightness(0.7);
   -ms-filter:blur(5px) brightness(0.7);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  */
   
 }
 

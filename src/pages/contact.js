@@ -18,7 +18,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className="fade-in-contact">
       <h1 className="h1">
         Si vous voulez me contacter, <br /> remplissez le formulaire <br />{" "}
         ci-contre.
