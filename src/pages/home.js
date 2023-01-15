@@ -1,7 +1,11 @@
 import React from "react";
-import TypingText from "../components/TypingText";
 
+import SocialMedia from "../components/SocialMedia";
+import TypingText from "../components/TypingText";
 import Button from "../components/Button";
+
+import img from "../assets/pro.jpeg"
+
 import "../styles/home.css";
 
 function Home() {
@@ -20,8 +24,8 @@ function Home() {
         <Button
           textArea="Hire me"
           style={{
-            top: "50%",
-            left: "18.5%",
+            top: "60%",
+            left: "15.5%",
           }}
         />
       </a>
@@ -30,13 +34,15 @@ function Home() {
         <Button
           textArea="Resume"
           style={{
-            top: "50%",
-            left: "68%",
+            top: "60%",
+            left: "33%",
           }}
         />
       </a>
 
-      <img src="../assets/WhatsApp Image 2022-12-23 at 23.45.03.jpeg" alt="profile" />
+      <img src={img} alt="profile" />
+
+      <SocialMedia />
     </div>
   );
 }

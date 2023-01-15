@@ -49,11 +49,6 @@
   border-right: none;
 }
 
-/* .nav-menu li:not(:first-child) a::before {
-  content: "|";
-  padding-right: 15px;
-} */
-
 .nav-menu li a {
   text-decoration: none;
   display: inline-block;
@@ -145,20 +140,14 @@ inférieure ou égale à 768*/
   }
 
   @keyframes fade-in {
-
-    0% {opacity: 0;}
-    25% {opacity: 0.25;}
-    50% {opacity: 0.5;}
-    75% {opacity: 0.75;}
-    100% {opacity: 1;}
-    /* from {
+    from {
       
       opacity: 0;
     }
     to {
       
       opacity: 1;
-    } */
+    }
   }
 
   .nav-menu.expanded ul {
