@@ -18,9 +18,9 @@ function Home() {
 
       <a href="/contact">
         <Button
-          textArea="Contact"
+          textArea="Hire me"
           style={{
-            top: "57.66%",
+            top: "50%",
             left: "18.5%",
           }}
         />
@@ -28,13 +28,15 @@ function Home() {
 
       <a href="/about">
         <Button
-          textArea="About"
+          textArea="Resume"
           style={{
-            top: "46%",
+            top: "50%",
             left: "68%",
           }}
         />
       </a>
+
+      <img src="../assets/WhatsApp Image 2022-12-23 at 23.45.03.jpeg" alt="profile" />
     </div>
   );
 }

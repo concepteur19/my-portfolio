@@ -97,3 +97,11 @@ textarea {
     top: 52%;
     left: 29%;
 }
+
+svg {
+    opacity: 0.75;
+  }
+  
+  svg:hover {
+    opacity: 1;
+  }

@@ -1,24 +1,23 @@
-div {
-  font-family: Poppins;
-}
-
-@keyframes slide-left {
-  from {
-    left: 80%;
-  }
-  to {
-    left: -5;
-  }
-}
-
 .fadeIn-text {
   font-family: "Script MT";
   font-size: 40px;
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 17%;
+  left: 20%;
   color: #f5f5f5;
-  animation: slide-left 2s linear forwards;
+  opacity: 0;
+  animation: fade-in 3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  to {
+    opacity: 1;
+    left: 20%;
+  }
 }
 
 .fadeIn-text span {
@@ -30,47 +29,6 @@ div {
   left: 5%;
 }
 
-.typing-text {
-  color: #4866ff;
-  overflow: hidden;
-  border-right: 2px solid #4866ff;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.2em;
-  animation: typing 3s steps(22, end), blink-caret 0.5s step-end infinite;
-}
-
-.typing-text .cursor {
-  animation: blink-caret 0.375s step-end infinite alternate;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 15%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  40% {
-    border-color: #4866ff;
-  }
-}
-
-svg {
-  opacity: 0.75;
-}
-
-svg:hover {
-  opacity: 1;
-}
-
 .wrapper {
   position: absolute;
   top: 30%;
@@ -79,19 +37,12 @@ svg:hover {
   
 }
 
-.wrapper .static-txt {
-  font-size: 40px;
-  color: #f5f5f5;
-  font-weight: 400;
-
-}
-
 .wrapper .dynamic-txts{
   
   margin-left: 15px;
   position: relative;
-  top: -32px;
-  left: -30px;
+  top: -10px;
+  left: -40px;
   height: 90px;
   line-height: 90px;
   
@@ -102,7 +53,7 @@ svg:hover {
   
   list-style: none;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: bold;
   color: #4866ff;
   animation: slide 12s steps(4) infinite;
   position: relative;
