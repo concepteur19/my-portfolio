@@ -64,7 +64,7 @@ textarea {
     position: absolute;
     top: 26%;
     left: 10%;
-    color: #f5f5f5;
+
     text-align: center;
 }
 
@@ -73,7 +73,6 @@ textarea {
     position: absolute;
     top: 47%;
     left: 20%;
-    color: #f5f5f5;
     text-align: center;
 }
 
@@ -82,7 +81,6 @@ textarea {
     text-decoration: none;
     text-align: center;
     z-index: 4;
-    color: #f5f5f5;
     margin: 10px;
 }
 

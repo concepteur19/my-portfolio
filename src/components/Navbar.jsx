@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../styles/navbar.css";
 
-function Navbar() {
+function Navbar(props) {
 
-  const [ligthMode, setLigthMode] = useState(false);
+  const ligthMode = props.ligthMode;
 
-  function handleLightClick() {
-    setLigthMode(!ligthMode)
-  }
+  
 
   const [gotClicked, setGotClicked] = useState(false);
   function handleClick() {
@@ -48,7 +46,7 @@ function Navbar() {
           </svg>
         </button>
 
-        <span onClick={handleLightClick}>
+        <span onClick={props.click}>
           
           {!ligthMode ? (
             <svg className="svg-light"

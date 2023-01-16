@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import "../styles/App.css";
@@ -16,11 +16,18 @@ import Contact from "../pages/contact"
 
 function App() {
 
+  const [lightMode, setLigthMode] = useState(false);
+
+  function handleLightClick() {
+    setLigthMode(!lightMode)
+  }
+
   return (
-    <div className="App">
-      {/* <img src={img} alt="Background" className="img" /> */}
-      <div className="img"></div>
-      <Navbar />
+    <div className={`App ${lightMode? 'light-theme' : 'dark-theme'}`} >
+      <Navbar 
+        click = {handleLightClick}
+        ligthMode = {lightMode}
+      />
       <Lateralbar />
       <BrowserRouter>
         <Routes>

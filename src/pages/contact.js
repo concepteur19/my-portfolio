@@ -52,7 +52,7 @@ function Contact() {
 
           <Button
             type="submit"
-            textArea="Envoyer"
+            textArea="Send"
             mouseOver={handleMouseOver}
             mouseDown={handleMouseDown}
             style={{
