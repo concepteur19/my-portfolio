@@ -1,15 +1,8 @@
 .lateral-button {
   width:3px;
   height: 70px;
-  background-color: #3f3f3f;
-  border: 0.05px solid #f5f5f542;
   margin-bottom: 40px;
   border-radius: 7px;
-  
-}
-
-.lateral-button a.active {
-  background-color: #f5f5f5;
 }
 
 .nav-button {
@@ -21,7 +14,22 @@
   top: 30%;
 }
 
+.dark-theme .lateral-button {
+  background-color: #ffffff55;
+  border-color: #f5f5f5;
+}
 
-.lateral-button:hover {
-    background-color: #f5f5f5;
+.light-theme .lateral-button {
+  background-color: #191919a4;
+  border-color: #000000a4;
+}
+
+.light-theme .lateral-button:hover {
+    background-color: #191919;
+    border-color: #191919;
+}
+
+.dark-theme .lateral-button:hover {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
 }

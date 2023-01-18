@@ -10,7 +10,7 @@ import "../styles/home.css";
 
 function Home() {
   return (
-    <div>
+    <div className="fade-in-home ">
       {/* <h1 className="title">Software Engineer</h1>
         <h2 className="another-title-h2">Fullstack web Developper <br /> Junior web Designer</h2> */}
 
@@ -40,7 +40,7 @@ function Home() {
         />
       </a>
 
-      <img src={img} alt="profile" />
+      <img className="img" src={img} alt="profile" />
 
       {/* <SocialMedia
         style={{

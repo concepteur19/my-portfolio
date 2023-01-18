@@ -16,17 +16,17 @@ import Contact from "../pages/contact"
 
 function App() {
 
-  const [lightMode, setLigthMode] = useState(false);
+  const [ligthOrDarkMode, setLigthMode] = useState(true);
 
   function handleLightClick() {
-    setLigthMode(!lightMode)
+    setLigthMode(!ligthOrDarkMode)
   }
 
   return (
-    <div className={`App ${lightMode? 'light-theme' : 'dark-theme'}`} >
+    <div className={`App ${ligthOrDarkMode? 'light-theme' : 'dark-theme'}`} >
       <Navbar 
         click = {handleLightClick}
-        ligthMode = {lightMode}
+        ligthOrDarkMode = {ligthOrDarkMode}
       />
       <Lateralbar />
       <BrowserRouter>
