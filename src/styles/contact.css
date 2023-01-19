@@ -1,6 +1,6 @@
 .fade-in-contact {
   animation: fade-in-contact 1s ease-in forwards;
-  z-index: 2;
+  z-index: 9;
 }
 
 @keyframes fade-in-contact {

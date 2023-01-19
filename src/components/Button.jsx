@@ -13,6 +13,7 @@ function Button(props) {
                 onMouseLeave = {props.mouseDown} 
                 style = { props.style }
                 type={props.type}
+                onClick={props.click}
             > 
                 {props.textArea} 
             </button>
