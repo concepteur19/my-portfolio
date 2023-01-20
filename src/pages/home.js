@@ -1,22 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
 
 //import SocialMedia from "../components/SocialMedia";
 import TypingText from "../components/TypingText";
 import Button from "../components/Button";
-import { Document, Page } from "react-pdf";
 
 import img from "../assets/pro.jpeg";
-import CV from "../assets/CV_2023_Eng.pdf";
+//import cv from "../assets/cv.pdf";
 
 import "../styles/home.css";
 
 function Home() {
-  const [showPDF, setShowPDF] = useState(false);
+  // const [showPDF, setShowPDF] = useState(false);
 
-  function handleClick() {
-    setShowPDF(!showPDF);
-    //window.open(CV, "_blank");
-  }
+  // function handleClick() {
+  //   setShowPDF(!showPDF);
+  //   //window.open(CV, "_blank");
+  // }
 
   return (
     <div className="fade-in-home ">
@@ -41,35 +40,26 @@ function Home() {
         />
       </a>
 
-      <Button
-        click={handleClick}
-        textArea="Resume"
-        style={{ 
-          top: "650px",
-          left: "37%",
-        }}
-      />
-      {showPDF && (
+      <a href="src/assets/cv.pdf" target="_blank" rel="noreferrer">
+        <Button
+          // click={handleClick}
+          textArea="Resume"
+          style={{
+            top: "650px",
+            left: "37%",
+          }}
+        />
+      </a>
+
+      {/* {showPDF && (
         <div className="pdf">
-          <Document file={CV}>
+          <Document file={cv}>
             <Page pageNumber={1} />
           </Document>
         </div>
-      )}
+      )} */}
 
       <img className="img1" src={img} alt="profile" />
-
-      {/* <SocialMedia
-        style={{
-          listStyleType: "none",
-          fontSize: "10px",
-          
-          textAlign: "center",
-          zIndex: "4",
-          color: "#f5f5f5",
-          margin: "10px",
-        }}
-      /> */}
     </div>
   );
 }
