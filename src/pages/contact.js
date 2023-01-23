@@ -41,7 +41,6 @@ function Contact() {
           <Input texte_grisee="Email" class="mail" type="email" />
           <Input texte_grisee="phone number" class="phone" type="number" />
 
-          {/* <Input texte_grisee="Enter your message" class="message" type="textarea"/> */}
           <textarea
             name="message"
             id=""
