@@ -10,24 +10,6 @@ html, body, body > div, .App {
   z-index: 1;
 }
 
- /* .img {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-   filter: blur(5px) brightness(0.7);
-  -webkit-filter: brightness(0.2);
-  -moz-filter:blur(5px) brightness(0.7);
-  -o-filter:blur(5px) brightness(0.7);
-  -ms-filter:blur(5px) brightness(0.7);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;  
-  
-} */
-
 /* Thème sombre */
 .dark-theme {
   background-color: #111;
@@ -84,38 +66,53 @@ html, body, body > div, .App {
 
 .item img {
   border-radius: 1.3rem;
-  width: 100%;
-  height: 100%
+  width: 100%; 
+  height: 100%;
+  pointer-events: none;
+}
+
+.item p {
+  width: 100%; 
+  height: 10%
 }
 
 .item {
-  min-height: 20rem;
-  width: 15rem;
+  min-height: 25rem;
+  min-width: 15rem;
   padding: 20px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .item p a {
   text-decoration: none;
-  color: black;
 }
 
 .item p a:hover {
   text-decoration: underline blue;
-  color:blue;
 }
-
 
 .inner-carousel {
   display: flex;
-  position: absolute;
-  top: 25%;
-  left: 20%;
-  z-index: 5;
-  background-color: #a2a2ff;
+  width: 43rem;
+ 
 }
 
 .carousel {
   cursor: grab;
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  left: 20%;
   overflow: hidden;
-  background-color: #4866ff;
+  
+}
+
+p span.name {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+span.description {
+  font-weight: 400;
 }
