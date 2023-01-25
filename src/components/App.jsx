@@ -21,7 +21,6 @@ function App() {
 
   return (
     <div className={`App ${ligthOrDarkMode? 'light-theme' : 'dark-theme'}`} >
-      {/* <img className='img' src={img} alt="" /> */}
       <Navbar 
         click = {handleLightClick}
         ligthOrDarkMode = {ligthOrDarkMode}

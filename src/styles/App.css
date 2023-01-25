@@ -82,13 +82,40 @@ html, body, body > div, .App {
   }
 }
 
-.carroussel-test {
-  position: absolute;
-  top: 0%;
-  left: 20%;
+.item img {
+  border-radius: 1.3rem;
+  width: 100%;
+  height: 100%
 }
 
-.carroussel-test img {
-  width: 200px;
-  height: 200px;
+.item {
+  min-height: 20rem;
+  width: 15rem;
+  padding: 20px;
+}
+
+.item p a {
+  text-decoration: none;
+  color: black;
+}
+
+.item p a:hover {
+  text-decoration: underline blue;
+  color:blue;
+}
+
+
+.inner-carousel {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  z-index: 5;
+  background-color: #a2a2ff;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  background-color: #4866ff;
 }
