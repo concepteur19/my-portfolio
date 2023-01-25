@@ -105,6 +105,8 @@ html, body, body > div, .App {
   top: 30%;
   left: 20%;
   overflow: hidden;
+  border-radius: 1.3rem;
+  background-color: #4866ff2c;
   
 }
 

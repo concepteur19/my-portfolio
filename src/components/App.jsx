@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import "../styles/App.css";
@@ -13,17 +13,27 @@ import Contact from "../pages/contact"
 
 function App() {
 
-  const [ligthOrDarkMode, setLigthMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   function handleLightClick() {
-    setLigthMode(!ligthOrDarkMode)
+    setIsDarkMode(!isDarkMode)
   }
 
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.add("light-theme"); 
+      document.body.classList.remove("dark-theme");
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className={`App ${ligthOrDarkMode? 'light-theme' : 'dark-theme'}`} >
+    <div className={`App ${isDarkMode? 'dark-theme' : 'light-theme' }`} >
       <Navbar 
         click = {handleLightClick}
-        ligthOrDarkMode = {ligthOrDarkMode}
+        ligthOrDarkMode = {isDarkMode}
       />
       <Lateralbar />
       <BrowserRouter>
