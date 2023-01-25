@@ -82,6 +82,10 @@ html, body, body > div, .App {
   padding: 20px;
   padding-right: 30px;
   text-align: center;
+  border-radius: 1.3rem;
+  background-color: #4866ff2c;
+  margin-right: 20px;
+  box-shadow: 0px 2px 5px rgba(28, 28, 28, 0.36);
 }
 
 .item p a {
@@ -104,9 +108,9 @@ html, body, body > div, .App {
   z-index: 5;
   top: 30%;
   left: 20%;
+  padding: 10px;
   overflow: hidden;
-  border-radius: 1.3rem;
-  background-color: #4866ff2c;
+  
   
 }
 
