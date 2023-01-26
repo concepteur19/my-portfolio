@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+
 import images from "../images";
 import ProjectCard from "../components/Project-card";
+import '../styles/projects.css'
 
 const projects = [
   {
@@ -32,10 +34,10 @@ const projects = [
     link: "https://www.CJS-Todo.com",
   },
   {
-    name: "CJS-Todo",
-    image: images[2],
-    description: "My personal Todo list",
-    link: "https://www.CJS-Todo.com",
+    name: "CJS-Ecom",
+    image: images[3],
+    description: "My personal e-commerce",
+    link: "https://www.CJS-Ecom.com",
   },
   {
     name: "CJS-Todo",

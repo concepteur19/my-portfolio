@@ -132,4 +132,5 @@ a svg {
 
 svg:hover {
   opacity: 0.75;
+  scale: 1.5;
 }
