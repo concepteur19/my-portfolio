@@ -57,6 +57,15 @@ function Projects() {
 
   return (
     <div className="container">
+      <motion.h1
+        animate = {{y: 150}}
+        transition = {{type: "tween", duration: 1}}
+        className="title"
+      > 
+        <h2>My Projects</h2> 
+      
+      </motion.h1>
+
       <motion.div
         ref={carousel}
         className="carousel"

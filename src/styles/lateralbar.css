@@ -3,6 +3,7 @@
   height: 70px;
   margin-bottom: 40px;
   border-radius: 7px;
+  
 }
 
 .nav-button {
@@ -12,6 +13,7 @@
   align-items: center;
   left: 96%;
   top: 30%;
+  position: fixed;
 }
 
 .dark-theme .lateral-button {

@@ -8,6 +8,7 @@ function SocialMedia(props) {
         href="https://www.linkedin.com/in/zobel-ulrich-nguening-tchomgui-825a01224/"
       >
         <svg
+          className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
           width="40px"
@@ -24,6 +25,7 @@ function SocialMedia(props) {
 
       <a className="link2" href="https://github.com/concepteur19">
         <svg
+          className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
           width="40px"
@@ -55,6 +57,7 @@ function SocialMedia(props) {
 
       <a className="link3" href="https://web.whatsapp.com/697451979">
         <svg
+          className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
           width="40px"
@@ -93,6 +96,7 @@ function SocialMedia(props) {
         href="https://www.youtube.com/channel/UCczzA89A0eU9MMrkCnWfnAw"
       >
         <svg
+          className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
           width="40px"

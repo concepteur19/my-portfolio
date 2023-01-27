@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 import Input from "../components/Input";
 import "../styles/input.css";
 import "../styles/contact.css";
@@ -19,18 +21,27 @@ function Contact() {
 
   return (
     <div className="fade-in-contact">
-      <h1 className="h1">
-        Si vous voulez me contacter, <br /> remplissez le formulaire <br />{" "}
-        ci-contre.
-      </h1>
-      <div className="contact">
+      <motion.div
+        animate={{ y: 225, x: 90 }}
+        transition={{ type: "tween", duration: 1 }}
+        initial={{ y: 0, x: 90 }}
+      >
+        <h1 className="h1">
+          Si vous voulez me contacter, <br /> remplissez le formulaire <br />{" "}
+          ci-contre.
+        </h1>
+      </motion.div>
 
-        <h2 className="h2">Contacts :</h2>
-
-        <SocialMedia />
-       
-      </div>
-
+      <motion.div
+        animate={{ y: 400, x: 160 }}
+        transition={{ type: "tween", duration: 1 }}
+        initial={{ y: 800, x:160 }}
+      >
+        <h2 className="h2 contact">Contacts :</h2>
+      </motion.div>
+      
+      <div className="social-media"><SocialMedia/></div>
+      
       <form
         className="contact-form"
         action="https://www.google.com"

@@ -14,7 +14,7 @@ import Contact from "../pages/contact";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  function handleLightClick() {
+  function handleClick() {
     setIsDarkMode(!isDarkMode);
   }
 
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
-      <Navbar click={handleLightClick} ligthOrDarkMode={!isDarkMode} />
+      <Navbar click={handleClick} ligthOrDarkMode={!isDarkMode} />
       <Lateralbar />
       <BrowserRouter>
         <Routes>
