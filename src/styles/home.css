@@ -10,7 +10,7 @@
   top: 25%;
   left: 20%;
   opacity: 0;
-  animation: fade-in 3s ease-in forwards;
+  animation: fade-in 2s ease-in forwards;
 }
 
 @keyframes fade-in {

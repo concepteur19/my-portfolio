@@ -1,3 +1,8 @@
+.container {
+  animation: fade-in-contact 1s ease-in forwards;
+  z-index: 5;
+}
+
 .item img {
     border-radius: 1.3rem;
     width: 100%; 
@@ -40,7 +45,6 @@
   .carousel {
     cursor: grab;
     position: absolute;
-    z-index: 5;
     top: 30%;
     left: 20%;
     padding: 10px;

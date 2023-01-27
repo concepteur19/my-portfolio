@@ -91,12 +91,12 @@ textarea {
   text-decoration: none;
   text-align: center;
   z-index: 4;
-  animation: slide-up 1s ease-in-out;
+  animation: slide-up 0.5s ease-in-out;
 }
 
 @keyframes slide-up{
   from {
-    top: 100%;
+    top: 80%;
   }
   to {
     top: 57%;
