@@ -7,6 +7,7 @@ import "../styles/contact.css";
 
 import SocialMedia from "../components/SocialMedia";
 import Button from "../components/Button";
+import Title from "../components/Title";
 
 function Contact() {
   const [isOver, setIsOver] = useState(false);
@@ -21,27 +22,32 @@ function Contact() {
 
   return (
     <div className="fade-in-contact">
+      <Title 
+        title="Hire me"
+      />
+
       <motion.div
         animate={{ y: 225, x: 90 }}
         transition={{ type: "tween", duration: 1 }}
         initial={{ y: 0, x: 90 }}
       >
         <h1 className="h1">
-          Si vous voulez me contacter, <br /> remplissez le formulaire <br />{" "}
-          ci-contre.
+          If you want to contact me, <br /> complete the form.{" "}
         </h1>
       </motion.div>
 
       <motion.div
         animate={{ y: 400, x: 160 }}
         transition={{ type: "tween", duration: 1 }}
-        initial={{ y: 800, x:160 }}
+        initial={{ y: 800, x: 160 }}
       >
         <h2 className="h2 contact">Contacts :</h2>
       </motion.div>
-      
-      <div className="social-media"><SocialMedia/></div>
-      
+
+      <div className="social-media">
+        <SocialMedia />
+      </div>
+
       <form
         className="contact-form"
         action="https://www.google.com"

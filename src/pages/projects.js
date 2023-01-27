@@ -5,6 +5,7 @@ import { useRef, useEffect, useState } from "react";
 import images from "../images";
 import ProjectCard from "../components/Project-card";
 import '../styles/projects.css'
+import Title from "../components/Title";
 
 const projects = [
   {
@@ -57,14 +58,9 @@ function Projects() {
 
   return (
     <div className="container">
-      <motion.h1
-        animate = {{y: 150}}
-        transition = {{type: "tween", duration: 1}}
-        className="title"
-      > 
-        <h2>My Projects</h2> 
-      
-      </motion.h1>
+      <Title 
+        title = "My Projects"
+      />
 
       <motion.div
         ref={carousel}

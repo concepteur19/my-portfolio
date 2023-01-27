@@ -39,7 +39,6 @@
   .inner-carousel {
     display: flex;
     width: 43rem;
-   
   }
   
   .carousel {
@@ -54,7 +53,7 @@
   }
   
   p span.name {
-    font-weight: bold;
+    font-weight: 500;
     font-size: x-large;
   }
   
@@ -67,4 +66,10 @@
     top: -10%;
     left: 40%;
     z-index: 5;
+  }
+
+  .title h3 {
+    font-weight: 550;
+    text-decoration: underline;
+    
   }
