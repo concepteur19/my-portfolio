@@ -11,7 +11,6 @@ function Title(props) {
       >
         <h3> {props.title} </h3>
       </motion.h1>
-      ;
     </div>
   );
 }

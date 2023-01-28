@@ -4,7 +4,6 @@ html, body, body > div, .App {
 
 .App {
   width: 100%;
-  min-height: calc(100vh-80px);
   display: flex;
   flex-direction: row;
   z-index: 1;
@@ -25,7 +24,7 @@ html, body, body > div, .App {
 }
 
 .App::before {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   content: "";
   height: 550px;
@@ -38,7 +37,7 @@ html, body, body > div, .App {
 }
 
 .App::after {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   content: "";
   height: 275px;

@@ -28,23 +28,12 @@ const projects = [
     description: "My personal Todo list",
     link: "https://www.CJS-Todo.com",
   },
-  {
-    name: "CJS-Todo",
-    image: images[2],
-    description: "My personal Todo list",
-    link: "https://www.CJS-Todo.com",
-  },
+  
   {
     name: "CJS-Ecom",
     image: images[3],
     description: "My personal e-commerce",
     link: "https://www.CJS-Ecom.com",
-  },
-  {
-    name: "CJS-Todo",
-    image: images[2],
-    description: "My personal Todo list",
-    link: "https://www.CJS-Todo.com",
   },
 ];
 

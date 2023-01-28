@@ -59,10 +59,6 @@ function Contact() {
           <Input texte_grisee="phone number" class="phone" type="number" />
 
           <textarea
-            name="message"
-            id=""
-            cols="40"
-            rows="8"
             placeholder="Enter your message"
           ></textarea>
 

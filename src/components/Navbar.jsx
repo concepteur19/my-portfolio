@@ -23,7 +23,7 @@ function Navbar(props) {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-navbar">
       <nav className="nav-bar">
         <a href="/" className="logo">
           {" "}

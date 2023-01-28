@@ -1,6 +1,6 @@
 .fade-in-contact {
   animation: fade-in-contact 1s ease-in forwards;
-  z-index: 9;
+  z-index: 5;
 }
 
 @keyframes fade-in-contact {
@@ -17,7 +17,6 @@
   top: 28%;
   left: 155%;
   padding: 25px;
-
   background-color: #2e324aa1;
   border: 1.5px solid #4866ff;
   border-radius: 3px;
@@ -74,7 +73,7 @@ textarea {
   position: absolute;
   top: 26%;
   left: 10%;
-
+  z-index: 5;
   text-align: center;
 }
 
@@ -84,19 +83,20 @@ textarea {
   top: 47%;
   left: 20%;
   text-align: center;
+  z-index: 5;
 }
 
 .social-media a {
   font-size: 10px;
   text-decoration: none;
   text-align: center;
-  z-index: 4;
-  animation: slide-up 0.5s ease-in-out;
+  z-index: 5;
+  animation: slide-up 1s ease-in-out;
 }
 
 @keyframes slide-up{
   from {
-    top: 80%;
+    top: 100%;
   }
   to {
     top: 57%;
