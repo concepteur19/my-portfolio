@@ -1,5 +1,5 @@
 .nav-bar {
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@
   font-weight: bold;
   font-family: "Roboto";
   margin-left: 25px;
-  z-index: 3;
+  z-index: 10;
 }
 
 .nav-menu {
@@ -49,7 +49,7 @@
   margin-left: 20px;
   margin-right: 20px;
   position: absolute;
-  top: 33%;
+  top: 37.5%;
   height: 13px;
 } 
 
@@ -72,10 +72,9 @@
   content: '';
   display: block;
   position:absolute;
-  bottom: 10px;
-  left: 50;
+  bottom: 13px;
   width: 0px;
-  height: 3px;
+  height: 2.5px;
   background: #a2a2ff;
   transition: all 0.1s ease-in-out;
 }
@@ -116,23 +115,23 @@ inférieure ou égale à 768*/
 
   .hambuger {
     display: flex;
-    z-index: 3;
+    z-index: 10;
   }
 
   .nav-menu ul {
     display: none;
     position: absolute;
-    top: -15px;
+    top: 0px;
     left: 0;
     
     flex-direction: column;
     
     /* definir la hauteur d'un elt cda premier plan ou arriere*/
-    z-index: 2;
+    z-index: 9;
 
     width: 100%;
-    height: calc(100vh - 77px);
-    background-color: #0b185bde;
+    height: 150vh;
+    background-color: #0b185bfa;
     border-top: 1px solid rgb(20, 1, 188);
 
     /* avec les keyframe permet de gerer les animation avec une durée
@@ -143,9 +142,9 @@ inférieure ou égale à 768*/
 
   }
 
-  .nav-menu li a:after {
+  .nav-menu li::after{
     display: none;
-  }
+  } 
 
   @keyframes fade-in {
     from {
@@ -163,7 +162,7 @@ inférieure ou égale à 768*/
   }
 
   .nav-menu li {
-
+    width: 100%;
     text-align: center;
     margin: 0;
   }
@@ -171,10 +170,10 @@ inférieure ou égale à 768*/
     color: #f5f5f5;
   
     width: 100%;
-    padding: 1.0rem 0;
+    padding: 1.0rem;
   }
   .nav-menu li:hover {
-    background-color: #19192071;
+    background-color: #00000071;
   }
   
 }

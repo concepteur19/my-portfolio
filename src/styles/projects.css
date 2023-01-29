@@ -1,6 +1,6 @@
 .container {
   animation: fade-in-contact 1s ease-in forwards;
-  z-index: 5;
+  z-index: 2;
   align-items: center;
 }
 
