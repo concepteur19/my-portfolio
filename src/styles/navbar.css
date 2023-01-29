@@ -40,12 +40,20 @@
 
 .nav-menu li {
   list-style-type: none;
-  margin-left: 15px;
-  border-right: 0.5px solid #ccc;
-  padding-right: 15px;
+  margin-left: 40px;
 }
 
-.nav-menu li:last-child {
+.nav-menu li::after{
+  content: "";
+  border-right: 0.5px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  top: 33%;
+  height: 13px;
+} 
+
+.nav-menu li:last-child:after {
   border-right: none;
 }
 
@@ -64,7 +72,7 @@
   content: '';
   display: block;
   position:absolute;
-  bottom:15px;
+  bottom: 10px;
   left: 50;
   width: 0px;
   height: 3px;
@@ -173,16 +181,17 @@ inférieure ou égale à 768*/
 
 nav span svg {
   position: absolute;
-  top: 30%;
-  left: 70%;
+  top: 25%;
+  left: 68%;
 }
 
 .svg-dark {
   position: absolute;
-  fill: #a2a2ff;
-  top: 37%;
+  fill: #7272ff;
+  top: 32%;
+  left: 68.5%;
 }
 
 .svg-light {
-  fill: #faffd8;
+  fill: #f5f5f5;
 }

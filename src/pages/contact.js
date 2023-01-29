@@ -69,7 +69,7 @@ function Contact() {
             mouseDown={handleMouseDown}
             style={{
               top: "100%",
-              left: "72%",
+              left: "71%",
               borderRadius: "3.5px",
               backgroundColor: !isOver ? "#2E324A" : "#f5f5f5",
               boxShadow: "none",

@@ -14,7 +14,7 @@ function Home() {
         Hey there I'm <span>NGUENING</span>
       </div>
 
-      <span className="multiText"></span>
+      {/* <span className="multiText"></span> */}
 
       <TypingText />
 
@@ -22,7 +22,7 @@ function Home() {
         <Button
           textArea="Hire me"
           style={{
-            top: "650px",
+            top: "70%",
             left: "15.5%",
           }}
         />
@@ -32,7 +32,7 @@ function Home() {
         <Button
           textArea="Resume"
           style={{
-            top: "650px",
+            top: "70%",
             left: "37%",
           }}
         />

@@ -5,7 +5,7 @@ function Title(props) {
   return (
     <div>
       <motion.h1
-        animate={{ y: 150 }}
+        animate={{ y: 200 }}
         transition={{ type: "tween", duration: 1 }}
         className="title"
       >

@@ -14,7 +14,8 @@
 .contact-form {
   position: relative;
   display: block;
-  top: 28%;
+  align-content: center;
+  top: 30%;
   left: 155%;
   padding: 25px;
   background-color: #2e324aa1;
@@ -22,8 +23,8 @@
   border-radius: 3px;
   box-shadow: 0 1px 50px #001fbe;
 
-  width: 380px;
-  height: 376.5px;
+  width: 400px;
+  height: 400px;
 }
 
 .light-theme .contact a {
@@ -38,7 +39,7 @@
 .input-container {
   position: absolute;
   top: 40.5px;
-  left: 62px;
+  left: 50px;
   margin-bottom: 25px;
 }
 
@@ -48,8 +49,8 @@
 
 .phone {
   position: absolute;
-  top: 26.5%;
-  left: 51%;
+  top: 26.75%;
+  left: 53%;
   width: 145px;
 }
 
@@ -66,12 +67,14 @@ textarea {
   font-family: Poppins;
   font-size: 12.5px;
   padding-left: 5px;
+  resize: none;
 }
 
 .h1 {
   font-family: "Script MT";
+  font-size: 30px;
   position: absolute;
-  top: 26%;
+  top: 29px;
   left: 10%;
   z-index: 5;
   text-align: center;
@@ -79,6 +82,7 @@ textarea {
 
 .h2 {
   font-family: "Script MT";
+  font-size: 25px;
   position: absolute;
   top: 47%;
   left: 20%;
