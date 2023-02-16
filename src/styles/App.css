@@ -1,9 +1,11 @@
 html, body, body > div, .App {
   height: 100%;
+  font-family: Poppins;
 }
 
 .App {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   z-index: 1;
@@ -61,4 +63,75 @@ html, body, body > div, .App {
     top: 11%;
     left: 53%;
   }
+}
+
+/* Media queries*/
+
+/* afficher certains styles lors que la largeur de l'écran est
+inférieure ou égale à 768*/
+@media screen and (max-width: 768px) {
+
+  .hambuger {
+    display: flex;
+    z-index: 10;
+  }
+
+  .nav-menu ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    
+    flex-direction: column;
+    
+    /* definir la hauteur d'un elt cda premier plan ou arriere*/
+    z-index: 9;
+
+    width: 100%;
+    height: 150vh;
+    background-color: #0b185bfa;
+    border-top: 1px solid rgb(20, 1, 188);
+
+    /* avec les keyframe permet de gerer les animation avec une durée
+    une certaine vitesse et un style*/
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function:ease-in-out;
+
+  }
+
+  .nav-menu li::after{
+    display: none;
+  } 
+
+  @keyframes fade-in {
+    from {
+      
+      opacity: 0;
+    }
+    to {
+      
+      opacity: 1;
+    }
+  }
+
+  .nav-menu.expanded ul {
+    display: block;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .nav-menu li a {
+    color: #f5f5f5;
+  
+    width: 100%;
+    padding: 1.0rem;
+  }
+  .nav-menu li:hover {
+    background-color: #00000071;
+  }
+  
 }
