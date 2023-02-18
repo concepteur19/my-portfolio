@@ -111,12 +111,8 @@
 
 /* afficher certains styles lors que la largeur de l'écran est
 inférieure ou égale à 768*/
-@media screen, (max-width: 768px ) and (orientation: portrait) {
+@media screen and (max-width: 768px) {
 
-  .lateral-button {
-    display: none;
-  }
-  
   .hambuger {
     display: flex;
     z-index: 10;
