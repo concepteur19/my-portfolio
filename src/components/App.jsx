@@ -38,8 +38,9 @@ function App() {
 
   return (
     <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
-      <Navbar click={handleClick} ligthOrDarkMode={!isDarkMode} />
-      <Lateralbar />
+      <header><Navbar click={handleClick} ligthOrDarkMode={!isDarkMode} /></header>
+      <main><Lateralbar /></main>
+      <footer></footer>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

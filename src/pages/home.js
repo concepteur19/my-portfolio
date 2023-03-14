@@ -3,13 +3,13 @@ import React from "react";
 import TypingText from "../components/TypingText";
 import Button from "../components/Button";
 
-import img from "../assets/pro.jpeg";
+//import img from "../assets/pro.jpeg";
 import "../styles/home.css";
 
 function Home() {
 
   return (
-    <div className="fade-in-home ">
+    <div className="fade-in-home home">
       <div className="fadeIn-text">
         Hey there I'm <span>NGUENING</span>
       </div>
@@ -37,8 +37,8 @@ function Home() {
           }}
         />
       </a>
-
-      <img className="img1" src={img} alt="profile" />
+      <div className="img1"></div>
+      {/* <img className="img1" src={img} alt="profile" /> */}
     </div>
   );
 }
