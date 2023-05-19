@@ -74,30 +74,30 @@ function Navbar(props) {
         <div className={`nav-menu ${gotClicked ? "expanded" : ""}`}>
           <ul>
             <li>
-              <a className={pathname === "/" ? "active" : ""} href="/">
+              <a className={pathname === "#home" ? "active" : ""} href="#home">
                 Home
               </a>
             </li>
             <li>
               <a
-                className={pathname === "/projects" ? "active" : ""}
-                href="/projects"
+                className={pathname === "#projects" ? "active" : ""}
+                href="#projects"
               >
                 Projects
               </a>
             </li>
             <li>
               <a
-                href="/contact"
-                className={pathname === "/contact" ? "active" : ""}
+                href="#contact"
+                className={pathname === "#contact" ? "active" : ""}
               >
                 Contact
               </a>
             </li>
             <li>
               <a
-                href="/about"
-                className={pathname === "/about" ? "active" : ""}
+                href="#about"
+                className={pathname === "#about" ? "active" : ""}
               >
                 About
               </a>

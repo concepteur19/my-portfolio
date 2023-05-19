@@ -46,35 +46,39 @@ function Projects() {
   }, []);
 
   return (
-    <div className="container">
-      <Title 
-        title = "My Projects"
-      />
-
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-      >
+    <div className="container" id="projects">
+      <div>
+        <Title 
+          title = "My Projects"
+        />
+      </div>
+      <div>
         <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-carousel"
+          ref={carousel}
+          className="carousel"
+          whileTap={{ cursor: "grabbing" }}
         >
-          {projects.map((projectDetails) => (
-            <motion.div className="item">
-              <ProjectCard
-                src={projectDetails.image}
-                alt={projectDetails.name}
-                name={projectDetails.name}
-                description={projectDetails.description}
-                link={projectDetails.link}
-                className="project-card"
-              />
-            </motion.div>
-          ))}
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="inner-carousel"
+          >
+            {projects.map((projectDetails) => (
+              <motion.div className="item">
+                <ProjectCard
+                  src={projectDetails.image}
+                  alt={projectDetails.name}
+                  name={projectDetails.name}
+                  description={projectDetails.description}
+                  link={projectDetails.link}
+                  className="project-card"
+                />
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
+      
     </div>
   );
 }

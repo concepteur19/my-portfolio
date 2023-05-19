@@ -1,7 +1,14 @@
 .container {
   animation: fade-in-contact 1s ease-in forwards;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 150px;
+  /* padding: 5rem 0rem 0 0rem ; */
 }
 
 .item img {
@@ -43,10 +50,10 @@
   }
   
   .carousel {
-    cursor: grab;
+    /* cursor: grab;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 20%; */
     padding: 10px;
     overflow: hidden;
     
@@ -63,9 +70,9 @@
   }
   .title {
     /* text-decoration: underline #f5f5f5; */
-    position: absolute;
+    /* position: absolute;
     top: -10%;
-    left: 40%;
+    left: 40%; */
     z-index: 5;
   }
 

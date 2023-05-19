@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 body {
   margin: 0;
@@ -10,5 +10,5 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  overflow: hidden;
+  /* overflow: hidden; */
 }

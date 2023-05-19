@@ -3,9 +3,14 @@ html, body, body > div, .App {
 }
 
 .App {
-  width: 100%;
-  display: flex;
   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 
 /* Thème sombre */
@@ -22,8 +27,8 @@ html, body, body > div, .App {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.App::before {
-  z-index: 1;
+/* .App::before {
+ 
   position: absolute;
   content: "";
   height: 550px;
@@ -36,7 +41,7 @@ html, body, body > div, .App {
 }
 
 .App::after {
-  z-index: 1;
+ 
   position: absolute;
   content: "";
   height: 275px;
@@ -46,20 +51,21 @@ html, body, body > div, .App {
   top: 10%;
   background: linear-gradient(45deg, #4866ff, #a2a2ff);
   animation: circle2 2s linear infinite;
-}
+} */
 
-header {
-  height: 10%;
+.header {
+  
 }
-
-footer {
+.main{
+  width: 100%;
+  
+  
+}
+.footer {
   height: 10%;
-  position: absolute;
-  top: 100%;
   width: 100%;
   border: 1px solid #111;
-  background-color: #111;
-  z-index: 11;
+  background-color: #ffffff;
 }
 
 @keyframes circle1{
@@ -97,10 +103,10 @@ footer {
 
   .nav-menu ul {
     display: none;
-    position: absolute;
+    /* position: absolute;
     top: 0px;
     left: 0;
-    
+     */
     flex-direction: column;
     
     /* definir la hauteur d'un elt cda premier plan ou arriere*/

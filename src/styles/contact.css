@@ -1,6 +1,14 @@
 .fade-in-contact {
   animation: fade-in-contact 1s ease-in forwards;
   z-index: 5;
+  border: 2px solid rgb(25, 0, 255);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0rem 0 0rem ;
 }
 
 @keyframes fade-in-contact {
@@ -12,19 +20,18 @@
   }
 }
 .contact-form {
-  position: relative;
-  display: block;
+  /* position: relative;
+  display: block; */
   align-content: center;
-  top: 30%;
-  left: 155%;
+  /* top: 30%;
+  left: 155%; */
   padding: 25px;
   background-color: #2e324aa1;
   border: 1.5px solid #4866ff;
   border-radius: 3px;
-  box-shadow: 0 1px 50px #001fbe;
+  box-shadow: 0 0px 20px #001fbe;
 
-  width: 400px;
-  height: 400px;
+  
 }
 
 .light-theme .contact a {
@@ -37,10 +44,10 @@
 }
 
 .input-container {
-  position: absolute;
+  /* position: absolute;
   top: 40.5px;
-  left: 50px;
-  margin-bottom: 25px;
+  left: 50px; */
+  
 }
 
 .mail {
@@ -48,9 +55,9 @@
 }
 
 .phone {
-  position: absolute;
+  /* position: absolute;
   top: 26.75%;
-  left: 53%;
+  left: 53%; */
   width: 145px;
 }
 
@@ -73,9 +80,9 @@ textarea {
 .h1 {
   font-family: "Script MT";
   font-size: 30px;
-  position: absolute;
+  /* position: absolute;
   top: 29px;
-  left: 10%;
+  left: 10%; */
   z-index: 5;
   text-align: center;
 }
@@ -83,9 +90,9 @@ textarea {
 .h2 {
   font-family: "Script MT";
   font-size: 25px;
-  position: absolute;
+  /* position: absolute;
   top: 47%;
-  left: 20%;
+  left: 20%; */
   text-align: center;
   z-index: 5;
 }
@@ -116,7 +123,7 @@ textarea {
   color: #f5f5f5;
 }
 
-.link1 {
+/* .link1 {
   position: absolute;
   top: 57%;
   left: 14%;
@@ -138,7 +145,7 @@ textarea {
   position: absolute;
   top: 57%;
   left: 29%;
-}
+} */
 
 a .svg {
   opacity: 1;
