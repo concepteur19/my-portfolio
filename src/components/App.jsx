@@ -45,7 +45,7 @@ function App() {
 
             <div className="main" style={style}>
 
-                {/* <Lateralbar /> */}
+                <Lateralbar />
                 <div className="section-portfolio"><Home /></div>
                 <div className="section-portfolio"><Projects /></div>
                 <div className="section-portfolio"><About /></div>

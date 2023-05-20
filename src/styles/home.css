@@ -1,9 +1,8 @@
 .home{
   display: flex;
-  justify-content: space-around;
-  align-items: start;
-  text-align: center;
-  padding-top: 200px;
+  justify-content: center;
+  align-items: center;
+  
   width: 100%;
   min-height: 100vh;
   border: 2px solid rgb(0, 0, 0);
@@ -17,10 +16,14 @@
 
 .fadeIn-text {
   font-family: "Script MT";
-  font-size: 50px;
-  /* position: absolute;
-  top: 25%;
-  left: 20%; */
+  font-size: 40px;
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+}
+
+.fadeIn-text2 {
+  font-family: "Script MT";
+  font-size: 30px;
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
 }
@@ -38,17 +41,18 @@
 
 .fadeIn-text span {
   font-family: Poppins;
+  font-size: 45px;
+  font-weight: 650;
+}
+
+.fadeIn-text2 span {
+  font-family: Poppins;
+  font-size: 30px;
   font-weight: 650;
   color: #4866ff;
-  /* position: absolute;
-  top: 125%;
-  left: 5%; */
 }
 
 .wrapper {
-  /* position: absolute;
-  top: 40%;
-  left: 10%; */
   display: inline-flex;
   
 }
@@ -56,9 +60,6 @@
 .wrapper .dynamic-txts{
   
   margin-left: 15px;
-  /* position: relative;
-  top: 80px;
-  left: 0px; */
   height: 90px;
   line-height: 90px;
   
@@ -72,8 +73,6 @@
   font-weight: bold;
   color: #4866ff;
   animation: slide 12s steps(4) infinite;
-  /* position: relative;
-  top: 0; */
 }
 
 @keyframes slide{
@@ -82,16 +81,9 @@
   }
 }
 
-/* .dynamic-txts li span{
-  position: relative;
-} */
 
 .dynamic-txts li span::after {
   content: "";
-  
-  /* position: absolute;
-  left: 0;
-  top: 0%; */
   height: 100%;
   width: 100%;
   border-left: 2px solid #4866ff;
@@ -115,28 +107,29 @@
   }
 }
 
-img {
+.profile-img{
   height: 65%;
-  width: 70%;
+  width: 80%;
   border-radius: 45%;
-  border: 3px solid #4866ff;
-  /* background-image: url("../assets/pro.jpeg"); */
+  border: 1px solid #4866ff00;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.191);
 }
 
-/* .pdf {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-} */
-
 .left {
-  width: 60%;
+  width: 55%;
+  margin: 0 6.125%;
+  /* margin-left: 150px; */
 }
 
 .right {
-  width: 40%;
+  width: 45%;
+
+  /* margin-left: 100px; */
+}
+
+.resume {
+  
 }

@@ -1,54 +1,49 @@
 import React from "react";
 
-import TypingText from "../components/TypingText";
+//import TypingText from "../components/TypingText";
 import Button from "../components/Button";
 
 import img from "../assets/pro.jpeg";
 import "../styles/home.css";
+import SocialMedia from "../components/SocialMedia";
 
 function Home() {
+
+  const style = {};
+
   return (
     <div className="fade-in-home home" id="home">
       <div className="left">
         <div className="fadeIn-text">
-          Hey there I'm <br /> <span>NGUENING</span>
+          Hey there It's <br /> <span>Zobel Nguening</span>
         </div>
 
-        <div className="fadeIn-text">
+        <div className="fadeIn-text2">
+          And I'm <span>Front-end Web Developper</span>
+        </div>
+
+        {/* <div className="fadeIn-text">
           <TypingText />
-        </div>
-
+        </div> */}
+        <br />
         <div className="resume">
-          For a student in their final year of computer engineering, specializing in front-end development with a passion for creating aesthetic 
-          and functional websites. I've worked with frameworks like Angular and React to build modern and responsive web applications. 
-          I enjoy working in teams to tackle technical challenges and improve my skills. I'm eager to explore new technologies and development methodologies. 
-          My goal is to provide a pleasant user experience and satisfy my clients and end-users. If you're looking for a talented and passionate front-end developer, 
-          feel free to check out my portfolio and contact me to discuss potential projects.
+          As a final year computer engineering student specializing in front-end development, 
+          I create aesthetic and functional websites using Angular and React. With a passion 
+          for improving my skills and working in teams, I aim to deliver a great user experience. 
+          Check out my portfolio to learn more.
         </div>
-
-        <a href="/contact">
-          <Button
-            textArea="Hire me"
-            style={{
-              top: "70%",
-              left: "15.5%",
-            }}
-          />
-        </a>
+        <br />
 
         <a href="/cv" target="_blank">
           <Button
-            textArea="Resume"
-            style={{
-              top: "70%",
-              left: "37%",
-            }}
+            textArea="Download cv"
+            style={style}
           />
         </a>
       </div>
 
       <div className="img1 right">
-        <img src={img} alt="professional_image" />
+        <img src={img} alt="professional_image" className="profile-img"/>
       </div>
     </div>
   );

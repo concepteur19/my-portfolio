@@ -10,11 +10,10 @@
   z-index: 3;
   display: block;
   width: auto;
-  position: absolute;
   align-items: center;
-  left: 96%;
-  top: 30%;
   position: fixed;
+  top: 50%;
+  left: 100%;
 }
 
 .dark-theme .lateral-button {
