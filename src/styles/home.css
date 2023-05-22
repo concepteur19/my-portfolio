@@ -1,10 +1,11 @@
 .home{
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   
-  width: 100%;
-  min-height: 100vh;
+  border: 1px solid #4866ff;
+  max-height: 100vh;
 }
 
 .fade-in-home {
@@ -97,8 +98,7 @@
 }
 
 .profile-img{
-  height: 65%;
-  width: 80%;
+  width: 75%;
   border-radius: 45%;
   border: 1px solid #4866ff00;
   background-size:cover;
@@ -115,7 +115,6 @@
 
 .right {
   width: 45%;
-
   /* margin-left: 100px; */
 }
 
@@ -144,4 +143,11 @@
     width: 82%;
     margin-top: 50px;
   }
+}
+
+.social-media a {
+  font-size: 10px;
+  text-decoration: none;
+  text-align: center;
+  animation: slide-up 1s ease-in-out;
 }

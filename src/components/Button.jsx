@@ -8,14 +8,15 @@ function Button(props) {
 
             {/* <button onClick={handleClick} onMouseOver={props.over} onMouseDown={props.over}> </button> */}
             <button
-                className="button-component"
+                // eslint-disable-next-line no-template-curly-in-string
+                className={`button-component ${props.class}`}
                 onMouseEnter={props.mouseOver}
                 onMouseLeave = {props.mouseDown} 
                 style = { props.style }
                 type={props.type}
                 onClick={props.click}
             > 
-                {props.textArea} 
+                {props.text} 
             </button>
         </div>
     )

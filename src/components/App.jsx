@@ -12,84 +12,116 @@ import About from "../pages/about";
 import Contact from "../pages/contact";
 
 function App() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-    function handleClick() {
-        setIsDarkMode(!isDarkMode);
+  const [isOver, setIsOver] = useState(false);
+
+  function handleMouseOver() {
+    setIsOver(true);
+  }
+
+  function handleMouseDown() {
+    setIsOver(false);
+  }
+
+  function handleClick() {
+    setIsDarkMode(!isDarkMode);
+  }
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      setIsDarkMode(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark-theme");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark-theme");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
+
+  // gestion de de la classe active lors du scroll ou lors des cliques
+  const [pathname, setHash] = useState(window.location.hash);
+  useEffect(() => {
+    function handleHash() {
+      setHash(window.location.hash);
     }
 
-    useEffect(() => {
-        const theme = localStorage.getItem("theme");
-        if (theme === "dark") {
-            setIsDarkMode(true);
+    function handleScroll() {
+      const sections = document.querySelectorAll("section");
+
+      const scrollPosition =
+        window.pageXOffset || document.documentElement.scrollTop;
+      let currentSection = "#home";
+
+      sections.forEach((section) => {
+        if (scrollPosition >= section.offsetTop - 150) {
+          currentSection = `#${section.id}`;
         }
-    }, [])
+      });
 
-    useEffect(() => {
-        if (isDarkMode) {
-            document.body.classList.add("dark-theme");
-            localStorage.setItem("theme", "dark");
+      setHash(currentSection);
+    }
 
-        } else {
-            document.body.classList.remove("dark-theme");
-            localStorage.setItem("theme", "light");
-        }
-    }, [isDarkMode]);
+    window.addEventListener("popstate", handleHash);
+    window.addEventListener("scroll", handleScroll);
 
-    // gestion de de la classe active lors du scroll ou lors des cliques 
-    const [pathname, setHash] = useState(window.location.hash);
-    useEffect(() => {
-        function handleHash() {
-            setHash(window.location.hash);
-        }
+    return () => {
+      window.removeEventListener("popstate", handleHash);
+      window.addEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // fin de gestion
 
-        function handleScroll() {
-            const sections = document.querySelectorAll("section");
+  const style = { display: "flex", flexDirection: "column" };
+  return (
+    <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
+      <div className="header">
+        <Navbar
+          click={handleClick}
+          ligthOrDarkMode={!isDarkMode}
+          pathname={pathname}
+        />
+      </div>
 
-            const scrollPosition = window.pageXOffset || document.documentElement.scrollTop;
-            let currentSection = "#home";
+      <div className="main" style={style}>
+        <Lateralbar pathname={pathname} />
+        <section id="home">
+          <div className="section-portfolio">
+            <Home 
+              isDarkMode={isDarkMode} 
+              isOver={isOver}
+              handleMouseDown={handleMouseDown}
+              handleMouseOver={handleMouseOver}
+            />
+          </div>
+        </section>
+        <section id="about">
+          <div className="section-portfolio">
+            <About />
+          </div>
+        </section>
+        <section id="projects">
+          <div className="section-portfolio">
+            <Projects />
+          </div>
+        </section>
+        <section id="contact">
+          <div className="section-portfolio">
+            <Contact 
+              isOver={isOver}
+              handleMouseDown={handleMouseDown}
+              handleMouseOver={handleMouseOver}
+            />
+          </div>
+        </section>
 
-            sections.forEach(section => {
-                if (scrollPosition >= section.offsetTop - 150) {
-                    currentSection = `#${section.id}`;
-                }
-            });
-
-            setHash(currentSection);
-        }
-
-        window.addEventListener("popstate", handleHash);
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("popstate", handleHash);
-            window.addEventListener("scroll", handleScroll);
-        };
-    }, []);
-    // fin de gestion
-
-    const style = { display: "flex", flexDirection: "column", }
-    return (
-        <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
-            <div className="header">
-                <Navbar 
-                    click={handleClick} 
-                    ligthOrDarkMode={!isDarkMode} 
-                    pathname={pathname} 
-                />
-            </div>
-
-            <div className="main" style={style}>
-
-                <Lateralbar
-                    pathname={pathname}
-                />
-                <section id="home"><div className="section-portfolio"><Home isDarkMode = {isDarkMode}/></div></section>
-                <section id="about"><div className="section-portfolio"><About /></div></section>
-                <section id="projects"><div className="section-portfolio"><Projects /></div></section>
-                <section id="contact"><div className="section-portfolio"><Contact /></div></section>
-
-                {/* <BrowserRouter>
+        {/* <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
@@ -97,15 +129,12 @@ function App() {
                     <Route path="/contact" element={<Contact />} />.
                 </Routes>
             </BrowserRouter> */}
-
-            </div>
-            <div className="footer">
-                <footer>je suis le footer</footer>
-            </div>
-
-
-        </div>
-    );
+      </div>
+      <div className="footer">
+        <footer>je suis le footer</footer>
+      </div>
+    </div>
+  );
 }
 
 export default App;

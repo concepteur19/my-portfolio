@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import Input from "../components/Input";
@@ -9,30 +9,25 @@ import SocialMedia from "../components/SocialMedia";
 import Button from "../components/Button";
 import Title from "../components/Title";
 
-function Contact() {
-  const [isOver, setIsOver] = useState(false);
+const styles = {
+  display: "flex",
+  justifyContent: "space-around"
+}
 
-  function handleMouseOver() {
-    setIsOver(true);
-  }
-
-  function handleMouseDown() {
-    setIsOver(false);
-  }
-
+function Contact(props) {
   return (
     <div className="fade-in-contact" id="contact">
       <div>
         <Title title="Hire me" />
       </div>
 
-      <div>
+      <div className="inner-contact">
         <div className="container-text">
           <div className="message-form">
             <motion.div
-              animate={{ y: 225, x: 90 }}
+              //animate={{ y: 225, x: 90 }}
               transition={{ type: "tween", duration: 1 }}
-              initial={{ y: 0, x: 90 }}
+              //</div>initial={{ y: 0, x: 90 }}
             >
               <h1 className="h1">
                 If you want to contact me, <br /> complete the form.{" "}
@@ -42,16 +37,18 @@ function Contact() {
 
           <div className="sm-title">
             <motion.div
-              animate={{ y: 400, x: 160 }}
+              //animate={{ y: 400, x: 160 }}
               transition={{ type: "tween", duration: 1 }}
-              initial={{ y: 800, x: 160 }}
+              //initial={{ y: 800, x: 160 }}
             >
               <h2 className="h2 contact">Contacts :</h2>
             </motion.div>
+          </div>
 
-            <div className="social-media">
-              <SocialMedia />
-            </div>
+          <div className="social-media">
+            <SocialMedia 
+              style = {styles}
+            />
           </div>
         </div>
 
@@ -67,22 +64,24 @@ function Contact() {
                 class="name"
                 type="text"
               />
+
               <Input texte_grisee="you@mail.com" class="mail" type="email" />
+
               <Input texte_grisee="phone number" class="phone" type="number" />
 
               <textarea placeholder="Enter your message"></textarea>
 
               <Button
                 type="submit"
-                textArea="Send"
-                mouseOver={handleMouseOver}
-                mouseDown={handleMouseDown}
+                text="Send"
+                class="button-form"
+                mouseOver={props.handleMouseOver}
+                mouseDown={props.handleMouseDown}
                 style={{
-                  top: "100%",
-                  left: "71%",
-                  borderRadius: "3.5px",
-                  backgroundColor: !isOver ? "#2E324A" : "#f5f5f5",
+                  backgroundColor: !props.isOver ? "#191919" : "#f5f5f5",
+                  color: !props.isOver ? "#f5f5f5" : "#191919",
                   boxShadow: "none",
+                  width: "35%",
                 }}
               />
             </div>

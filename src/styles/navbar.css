@@ -113,15 +113,15 @@
   position: fixed;
   top: 12%;
   left: 3%;
-  padding: 10px;
-  border-radius: 7px;
+  padding: 8px;
+  border-radius: 5px;
   font-weight: 600;
 }
 
 .button-div{
   display: flex;
   align-items: center ;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .button-div span{

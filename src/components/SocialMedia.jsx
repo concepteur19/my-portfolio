@@ -1,7 +1,12 @@
 import React from "react";
 
+
+
+
 function SocialMedia(props) {
   return (
+
+
     <div style={props.style}>
       <a
         className="link1"
@@ -11,8 +16,8 @@ function SocialMedia(props) {
           className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
-          width="40px"
-          height="40px"
+          width="30px"
+          height="30px"
         >
           <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z" />
           <path
@@ -20,7 +25,7 @@ function SocialMedia(props) {
             d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"
           />
         </svg>
-        <span>LinkedIn</span>
+        <div>LinkedIn</div>
       </a>
 
       <a className="link2" href="https://github.com/concepteur19">
@@ -28,8 +33,8 @@ function SocialMedia(props) {
           className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
-          width="40px"
-          height="40px"
+          width="30px"
+          height="30px"
         >
           <path
             fill="#2100c4"
@@ -52,7 +57,7 @@ function SocialMedia(props) {
             d="M24,31c-1.525,0-2.874,0.697-3.791,1.774C21.409,32.931,22.681,33,24,33s2.591-0.069,3.791-0.226 C26.874,31.697,25.525,31,24,31z"
           />
         </svg>
-        <span>Github</span>
+        <div>Github</div>
       </a>
 
       <a className="link3" href="https://web.whatsapp.com/697451979">
@@ -60,8 +65,8 @@ function SocialMedia(props) {
           className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
-          width="40px"
-          height="40px"
+          width="30px"
+          height="30px"
           fill-rule="evenodd"
           clip-rule="evenodd"
         >
@@ -88,7 +93,7 @@ function SocialMedia(props) {
             clip-rule="evenodd"
           />
         </svg>
-        <span>697451979</span>
+        <div>697451979</div>
       </a>
 
       <a
@@ -99,8 +104,8 @@ function SocialMedia(props) {
           className="svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
-          width="40px"
-          height="40px"
+          width="30px"
+          height="30px"
         >
           <path
             fill="#FF3D00"
@@ -108,7 +113,7 @@ function SocialMedia(props) {
           />
           <path fill="#FFF" d="M20 31L20 17 32 24z" />
         </svg>
-        <span>Youtube</span>
+        <div>Youtube</div>
       </a>
     </div>
   );

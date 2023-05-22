@@ -7,15 +7,16 @@ html, body, body > div, .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  width: 99%;
+  align-items: flex-start;
+  width: 99.8%;
   overflow: hidden;
   z-index: 1;
 }
 
 /* Thème sombre */
 .dark-theme {
-  background-color: #111;
+  background-color: 
+ #0d1117;
   color: #f5f5f5;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -53,9 +54,9 @@ html, body, body > div, .App {
   animation: circle2 2s linear infinite;
 } */
 
-.header {
+/* .header {
   
-}
+} */
 .main{
   width: 100%;
 }
