@@ -5,8 +5,6 @@
   
   width: 100%;
   min-height: 100vh;
-  border: 2px solid rgb(0, 0, 0);
-  
 }
 
 .fade-in-home {
@@ -16,14 +14,14 @@
 
 .fadeIn-text {
   font-family: "Script MT";
-  font-size: 40px;
+  font-size: 3.17vw;
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
 }
 
 .fadeIn-text2 {
   font-family: "Script MT";
-  font-size: 30px;
+  font-size: 2.375vw;
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
 }
@@ -41,13 +39,13 @@
 
 .fadeIn-text span {
   font-family: Poppins;
-  font-size: 45px;
+  font-size: 3.56vw;
   font-weight: 650;
 }
 
 .fadeIn-text2 span {
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 2.375vw;
   font-weight: 650;
   color: #4866ff;
 }
@@ -59,20 +57,11 @@
 
 .wrapper .dynamic-txts{
   
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
+  margin-left: 0.92rem;
+  height: 5.62rem;
+  line-height: 5.62rem;
   
   overflow: hidden; 
-}
-
-.dynamic-txts li{
-  
-  list-style: none;
-  font-size: 50px;
-  font-weight: bold;
-  color: #4866ff;
-  animation: slide 12s steps(4) infinite;
 }
 
 @keyframes slide{
@@ -131,5 +120,28 @@
 }
 
 .resume {
-  
+  font-size: 1.27vw;
+}
+
+@media only screen and (max-width: 992px) {
+  .home{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 82px;
+  }
+
+  .left {
+    margin: 50px 0 0 0 ;
+  }
+
+  .resume{
+    font-size: 1.6vw;
+  }
+
+  .profile-img{
+    width: 82%;
+    margin-top: 50px;
+  }
 }

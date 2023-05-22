@@ -8,7 +8,7 @@ function Button(props) {
 
             {/* <button onClick={handleClick} onMouseOver={props.over} onMouseDown={props.over}> </button> */}
             <button
-                className="button"
+                className="button-component"
                 onMouseEnter={props.mouseOver}
                 onMouseLeave = {props.mouseDown} 
                 style = { props.style }

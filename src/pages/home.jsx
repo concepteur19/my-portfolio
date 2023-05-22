@@ -7,12 +7,19 @@ import img from "../assets/pro.jpeg";
 import "../styles/home.css";
 import SocialMedia from "../components/SocialMedia";
 
-function Home() {
+function Home(props) {
 
-  const style = {};
+  const styleDark = {
+    boxShadow: "1px 1px 8px rgb(20, 1, 188)"
+  };
+
+  const styleLight = {
+    boxShadow: "1px 1px 8px #747474"
+  }
 
   return (
     <div className="fade-in-home home" id="home">
+      
       <div className="left">
         <div className="fadeIn-text">
           Hey there It's <br /> <span>Zobel Nguening</span>
@@ -37,7 +44,7 @@ function Home() {
         <a href="/cv" target="_blank">
           <Button
             textArea="Download cv"
-            style={style}
+            style={props.isDarkMode? styleDark : styleLight}
           />
         </a>
       </div>

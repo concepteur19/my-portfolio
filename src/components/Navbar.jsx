@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
 import src from '../assets/icons/icons8-sun-15.png'
 import src2 from '../assets/icons/icons8-moon-30.png'
@@ -12,17 +12,17 @@ function Navbar(props) {
     setGotClicked(!gotClicked);
   }
 
-  const [pathname, setPathname] = useState(window.location.pathname);
-  useEffect(() => {
-    function handlePathname() {
-      setPathname(window.location.pathname);
-    }
-    window.addEventListener("popstate", handlePathname);
+  // const [pathname, setPathname] = useState(window.location.hash);
+  // useEffect(() => {
+  //   function handlePathname() {
+  //     setPathname(window.location.hash);
+  //   }
+  //   window.addEventListener("popstate", handlePathname);
 
-    return () => {
-      window.removeEventListener("popstate", handlePathname);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("popstate", handlePathname);
+  //   };
+  // }, []);
 
   return (
     <div className="container-navbar">
@@ -45,9 +45,6 @@ function Navbar(props) {
             />
           </svg>
         </button>
-        {/* background-color: rgb(36, 36, 36);
-  color: #f5f5f5;
-  border: 1px solid #d9d9d9; */}
 
         <button className="theme-button" onClick={props.click} style={ligthOrDarkMode? { backgroundColor: "#f5f5f5", color: "#111", border: '1px solid #d9d9d9' }: {backgroundColor: "#111", color: "#f5f5f5", border: "1px solid #d9d9d9"}  }>
 
@@ -68,32 +65,35 @@ function Navbar(props) {
         <div className={`nav-menu ${gotClicked ? "expanded" : ""}`}>
           <ul>
             <li>
-              <a className={pathname === "#home" ? "active" : ""} href="#home">
+              <a className={props.pathname === "#home" ? "active" : ""} href="#home">
                 Home
               </a>
             </li>
+
             <li>
               <a
-                className={pathname === "#projects" ? "active" : ""}
+                href="#about"
+                className={props.pathname === "#about" ? "active" : ""}
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                className={props.pathname === "#projects" ? "active" : ""}
                 href="#projects"
               >
                 Projects
               </a>
             </li>
+            
             <li>
               <a
                 href="#contact"
-                className={pathname === "#contact" ? "active" : ""}
+                className={props.pathname === "#contact" ? "active" : ""}
               >
                 Contact
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className={pathname === "#about" ? "active" : ""}
-              >
-                About
               </a>
             </li>
           </ul>

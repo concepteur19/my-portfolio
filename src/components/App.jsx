@@ -36,20 +36,58 @@ function App() {
         }
     }, [isDarkMode]);
 
+    // gestion de de la classe active lors du scroll ou lors des cliques 
+    const [pathname, setHash] = useState(window.location.hash);
+    useEffect(() => {
+        function handleHash() {
+            setHash(window.location.hash);
+        }
+
+        function handleScroll() {
+            const sections = document.querySelectorAll("section");
+
+            const scrollPosition = window.pageXOffset || document.documentElement.scrollTop;
+            let currentSection = "#home";
+
+            sections.forEach(section => {
+                if (scrollPosition >= section.offsetTop - 150) {
+                    currentSection = `#${section.id}`;
+                }
+            });
+
+            setHash(currentSection);
+        }
+
+        window.addEventListener("popstate", handleHash);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("popstate", handleHash);
+            window.addEventListener("scroll", handleScroll);
+        };
+    }, []);
+    // fin de gestion
+
     const style = { display: "flex", flexDirection: "column", }
     return (
         <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
             <div className="header">
-                <Navbar click={handleClick} ligthOrDarkMode={!isDarkMode} />
+                <Navbar 
+                    click={handleClick} 
+                    ligthOrDarkMode={!isDarkMode} 
+                    pathname={pathname} 
+                />
             </div>
 
             <div className="main" style={style}>
 
-                <Lateralbar />
-                <div className="section-portfolio"><Home /></div>
-                <div className="section-portfolio"><Projects /></div>
-                <div className="section-portfolio"><About /></div>
-                <div className="section-portfolio"><Contact /></div>
+                <Lateralbar
+                    pathname={pathname}
+                />
+                <section id="home"><div className="section-portfolio"><Home isDarkMode = {isDarkMode}/></div></section>
+                <section id="about"><div className="section-portfolio"><About /></div></section>
+                <section id="projects"><div className="section-portfolio"><Projects /></div></section>
+                <section id="contact"><div className="section-portfolio"><Contact /></div></section>
 
                 {/* <BrowserRouter>
                 <Routes>

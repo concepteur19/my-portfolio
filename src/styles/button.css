@@ -1,11 +1,10 @@
-.button {
+.button-component {
     background-color: #191919;
     color: #f5f5f5;
     border-radius: 10px;
     border: 2px solid #a3b3ff;
     padding: 15px;
     font-size: 13px;
-    box-shadow: 1px 1px 8px #747474;
     font-family: Poppins;
     z-index: 2;
   }

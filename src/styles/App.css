@@ -8,7 +8,7 @@ html, body, body > div, .App {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 100%;
+  width: 99%;
   overflow: hidden;
   z-index: 1;
 }
@@ -58,17 +58,13 @@ html, body, body > div, .App {
 }
 .main{
   width: 100%;
-  
-  
 }
 .footer {
   height: 10%;
   width: 100%;
-  border: 1px solid #111;
-  background-color: #ffffff;
 }
 
-@keyframes circle1{
+/* @keyframes circle1{
   50%{
     top: 61%;
     left: -11%;
@@ -80,7 +76,7 @@ html, body, body > div, .App {
     top: 11%;
     left: 53%;
   }
-}
+} */
 
 
 
