@@ -29,7 +29,7 @@ function Navbar(props) {
       <nav className="nav-bar">
         <a href="/" className="logo">
           {" "}
-          PORTFOLIO{" "}
+          TCHOMGUI{" "}
         </a>
         <button onClick={handleClick} className="hambuger">
           <svg

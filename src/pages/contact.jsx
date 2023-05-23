@@ -18,7 +18,7 @@ function Contact(props) {
   return (
     <div className="fade-in-contact" id="contact">
       <div>
-        <Title title="Hire me" />
+        <Title title="Hire me" class='title' />
       </div>
 
       <div className="inner-contact">
@@ -27,7 +27,7 @@ function Contact(props) {
             <motion.div
               //animate={{ y: 225, x: 90 }}
               transition={{ type: "tween", duration: 1 }}
-              //</div>initial={{ y: 0, x: 90 }}
+            //</div>initial={{ y: 0, x: 90 }}
             >
               <h1 className="h1">
                 If you want to contact me, <br /> complete the form.{" "}
@@ -39,15 +39,15 @@ function Contact(props) {
             <motion.div
               //animate={{ y: 400, x: 160 }}
               transition={{ type: "tween", duration: 1 }}
-              //initial={{ y: 800, x: 160 }}
+            //initial={{ y: 800, x: 160 }}
             >
               <h2 className="h2 contact">Contacts :</h2>
             </motion.div>
           </div>
 
           <div className="social-media">
-            <SocialMedia 
-              style = {styles}
+            <SocialMedia
+              style={styles}
             />
           </div>
         </div>
@@ -81,7 +81,7 @@ function Contact(props) {
                   backgroundColor: !props.isOver ? "#191919" : "#f5f5f5",
                   color: !props.isOver ? "#f5f5f5" : "#191919",
                   boxShadow: "none",
-                  width: "35%",
+                  width: "25%",
                 }}
               />
             </div>

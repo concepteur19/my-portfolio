@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react";
 
 import images from "../images";
 import ProjectCard from "../components/Project-card";
-import '../styles/projects.css'
+import "../styles/projects.css";
 import Title from "../components/Title";
 
 const projects = [
@@ -28,7 +28,7 @@ const projects = [
     description: "My personal Todo list",
     link: "https://www.CJS-Todo.com",
   },
-  
+
   {
     name: "CJS-Ecom",
     image: images[3],
@@ -48,9 +48,7 @@ function Projects() {
   return (
     <div className="container" id="projects">
       <div>
-        <Title 
-          title = "My Projects"
-        />
+        <Title title="My Projects" class="title" />
       </div>
       <div>
         <motion.div
@@ -78,7 +76,6 @@ function Projects() {
           </motion.div>
         </motion.div>
       </div>
-      
     </div>
   );
 }

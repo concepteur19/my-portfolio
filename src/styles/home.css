@@ -1,11 +1,11 @@
 .home{
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   
   border: 1px solid #4866ff;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .fade-in-home {
@@ -98,7 +98,7 @@
 }
 
 .profile-img{
-  width: 75%;
+  width: 85%;
   border-radius: 45%;
   border: 1px solid #4866ff00;
   background-size:cover;

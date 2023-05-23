@@ -29,7 +29,7 @@ function Home(props) {
         </div>
 
         <div className="fadeIn-text2">
-          And I'm <span>Front-end Web Developper</span>
+          And I'm <span>Front-end Developper</span>
         </div>
 
         {/* <div className="fadeIn-text">
@@ -37,8 +37,8 @@ function Home(props) {
         </div> */}
         <br />
         <div className="resume">
-          As a final year computer engineering student specializing in front-end
-          development, I create aesthetic and functional websites using Angular
+          As a Sofware Engineer specializing in front-end
+          development, I create aesthetic and functional websites using principally Angular
           and React. With a passion for improving my skills and working in
           teams, I aim to deliver a great user experience. Check out my
           portfolio to learn more.

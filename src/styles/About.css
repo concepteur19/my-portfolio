@@ -13,3 +13,36 @@
 .about-container{
     padding: 0 50px;
 }
+
+.titleskillssection h3 {
+  font-size: 17px;
+  font-weight: 400;
+  /* color: rgb(44, 44, 44); */
+}
+
+.about-inner-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.skills-section{
+  padding: 25px 50px;
+  text-align: center;
+}
+
+.grid-three-col{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.img-txt {
+  padding: 20px;
+  text-align: center;
+}
+
+.taille-img {
+  height: 65px;
+  width: 60px;
+}
