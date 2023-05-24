@@ -5,9 +5,8 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: #f5f5f8 ;
-  
-  /* color: #f5f5f5; */
+  background-color: #f5f5f5 ;
+  color: #111;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.149);
 
   position: fixed;
@@ -17,14 +16,12 @@
 }
 .nav-bar a.active {
   color: #4866ff;
-  /* color: #a2a2ff; */
   font-weight: 500;
 }
 
 .logo {
   text-decoration: none;
   color: #111;
-  /* color: #f5f5f5; */
   font-size: 15px;
   font-weight: bold;
   font-family: "Poppins";
@@ -65,8 +62,8 @@
 .nav-menu li a {
   text-decoration: none;
   display: inline-block;
+  
   color: #111;
-  /* color: #f5f5f5; */
   font-weight: 500;
   font-size: 14px;
   transition: all 0.0s ease-in-out;
@@ -80,7 +77,7 @@
   bottom: 13px; */
   width: 0px;
   height: 2.5px;
-  background: #4866ff;
+  background: #a2a2ff;
   transition: all 0.1s ease-in-out;
 }
 
