@@ -165,7 +165,6 @@ function About() {
                 <img className="taille-img" src={mongos} alt="" /> <br />
                 <span>Mongoose</span>
               </div>
-            </div>
           </div>
         </div>
 
@@ -202,8 +201,6 @@ function About() {
                 <img className="taille-img" src='' alt="" /> <br />
                 <span>Power AMC</span>
               </div>
-
-            </div>
           </div>
       </div>
 

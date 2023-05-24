@@ -3,8 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  border: 1px solid #4866ff;
   min-height: 100vh;
 }
 

@@ -7,6 +7,7 @@ html, body, body > div, .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: flex-start;
   width: 100%;
   overflow: hidden;
