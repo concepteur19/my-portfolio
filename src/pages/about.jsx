@@ -165,77 +165,79 @@ function About() {
                 <img className="taille-img" src={mongos} alt="" /> <br />
                 <span>Mongoose</span>
               </div>
+            </div>
           </div>
         </div>
 
         <div className="skills-section">
-            <Title title="Others" class="titleskillssection" />
+          <Title title="Others" class="titleskillssection" />
 
-            <div className="grid-three-col">
-              <div className="img-txt">
-                <img className="taille-img" src={xd} alt="" /> <br />
-                <span>Adobe XD</span>
-              </div>
+          <div className="grid-three-col">
+            <div className="img-txt">
+              <img className="taille-img" src={xd} alt="" /> <br />
+              <span>Adobe XD</span>
+            </div>
 
-              <div className="img-txt">
-                <img className="taille-img" src={gitlab} alt="" /> <br />
-                <span>GitLab</span>
-              </div>
+            <div className="img-txt">
+              <img className="taille-img" src={gitlab} alt="" /> <br />
+              <span>GitLab</span>
+            </div>
 
-              <div className="img-txt">
-                <img className="taille-img" src={github} alt="" /> <br />
-                <span>GitHub</span>
-              </div>
+            <div className="img-txt">
+              <img className="taille-img" src={github} alt="" /> <br />
+              <span>GitHub</span>
+            </div>
 
-              <div className="img-txt">
-                <img className="taille-img" src={postman} alt="" /> <br />
-                <span>Postman</span>
-              </div>
+            <div className="img-txt">
+              <img className="taille-img" src={postman} alt="" /> <br />
+              <span>Postman</span>
+            </div>
 
-              <div className="img-txt">
-                <img className="taille-img" src={office} alt="" /> <br />
-                <span>Ms Office</span>
-              </div>
+            <div className="img-txt">
+              <img className="taille-img" src={office} alt="" /> <br />
+              <span>Ms Office</span>
+            </div>
 
-              <div className="img-txt">
-                <img className="taille-img" src='' alt="" /> <br />
-                <span>Power AMC</span>
-              </div>
+            <div className="img-txt">
+              <img className="taille-img" src="" alt="" /> <br />
+              <span>Power AMC</span>
+            </div>
           </div>
-      </div>
+        </div>
 
-      <div className="about-container">
-        <Title title="Services" class="title" />
-        animation: fade-in-contact 1s ease-in forwards animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards;
+        <div className="about-container">
+          <Title title="Services" class="title" />
+          animation: fade-in-contact 1s ease-in forwards animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
+          animation: fade-in-contact 1s ease-in forwards; animation:
+          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
+          ease-in forwards;
+        </div>
       </div>
     </div>
   );
