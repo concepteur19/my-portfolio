@@ -26,6 +26,13 @@
   grid-gap: 10px;
 }
 
+.about-inner-container-other{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .skills-section{
   padding: 25px 50px;
   text-align: center;

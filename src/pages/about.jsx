@@ -29,42 +29,20 @@ import gitlab from "../assets/icons/gitlab_original_logo_icon_146503.png";
 import postman from "../assets/icons/logo-postman.png";
 import office from "../assets/icons/msoffice.png";
 import github from "../assets/icons/icons8-github-48.png";
+import power from "../assets/icons/power.png";
 
 function About() {
   return (
     <div id="about-section">
       <div className="about-container">
         <Title title="Education" class="title" />
-        animation: fade-in-contact 1s ease-in forwards animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-        animation: fade-in-contact 1s ease-in forwards; animation:
-        fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-        ease-in forwards;
+        <div className="education">
+          <Title text="Computer Engineering"/> 2023 <br />
+
+        </div>
+        <div className="education">
+          <Title text="GCE Advance Level Option science"/> 2016 <br />
+        </div>
       </div>
 
       <div className="about-container">
@@ -169,38 +147,40 @@ function About() {
           </div>
         </div>
 
-        <div className="skills-section">
-          <Title title="Others" class="titleskillssection" />
+        <div className="about-inner-container-other">
+          <div className="skills-section">
+            <Title title="Others" class="titleskillssection" />
 
-          <div className="grid-three-col">
-            <div className="img-txt">
-              <img className="taille-img" src={xd} alt="" /> <br />
-              <span>Adobe XD</span>
-            </div>
+            <div className="grid-three-col">
+              <div className="img-txt">
+                <img className="taille-img" src={xd} alt="" /> <br />
+                <span>Adobe XD</span>
+              </div>
 
-            <div className="img-txt">
-              <img className="taille-img" src={gitlab} alt="" /> <br />
-              <span>GitLab</span>
-            </div>
+              <div className="img-txt">
+                <img className="taille-img" src={gitlab} alt="" /> <br />
+                <span>GitLab</span>
+              </div>
 
-            <div className="img-txt">
-              <img className="taille-img" src={github} alt="" /> <br />
-              <span>GitHub</span>
-            </div>
+              <div className="img-txt">
+                <img className="taille-img" src={github} alt="" /> <br />
+                <span>GitHub</span>
+              </div>
 
-            <div className="img-txt">
-              <img className="taille-img" src={postman} alt="" /> <br />
-              <span>Postman</span>
-            </div>
+              <div className="img-txt">
+                <img className="taille-img" src={postman} alt="" /> <br />
+                <span>Postman</span>
+              </div>
 
-            <div className="img-txt">
-              <img className="taille-img" src={office} alt="" /> <br />
-              <span>Ms Office</span>
-            </div>
+              <div className="img-txt">
+                <img className="taille-img" src={office} alt="" /> <br />
+                <span>Ms Office</span>
+              </div>
 
-            <div className="img-txt">
-              <img className="taille-img" src="" alt="" /> <br />
-              <span>Power AMC</span>
+              <div className="img-txt">
+                <img className="taille-img" src={power} alt="" /> <br />
+                <span>Power AMC</span>
+              </div>
             </div>
           </div>
         </div>
