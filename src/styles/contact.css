@@ -59,15 +59,17 @@ textarea {
 }
 
 .h1 {
-  font-family: "Script MT";
-  font-size: 30px;
+  font-family: poppins "amole", "Amtyara Script";
+  font-size: 25px;
   text-align: center;
+  font-weight: 300;
 }
 
 .h2 {
-  font-family: "Script MT";
-  font-size: 25px;
+  font-family: poppins "amole" "Amtyara Script";
+  font-size: 20px;
   text-align: center;
+  font-weight: 300;
 }
 
 .social-media a {
@@ -75,6 +77,7 @@ textarea {
   text-decoration: none;
   text-align: center;
   animation: slide-up 1s ease-in-out;
+  
 }
 
 @keyframes slide-up{
@@ -88,7 +91,7 @@ textarea {
 
 .light-theme .social-media a {
   color: #0a0a0a;
-  font-weight: 500;
+  
 }
 
 .dark-theme .social-media a {

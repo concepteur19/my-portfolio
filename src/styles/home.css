@@ -12,14 +12,14 @@
 }
 
 .fadeIn-text {
-  font-family: "Script MT";
+  font-family: "amole";
   font-size: 3.17vw;
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
 }
 
 .fadeIn-text2 {
-  font-family: "Script MT";
+  font-family: "amole";
   font-size: 2.375vw;
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
