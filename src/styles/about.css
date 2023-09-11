@@ -1,5 +1,5 @@
 #about-section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   border: 1px solid maroon;
   animation: fade-in-contact 1s ease-in forwards;
   display: flex;
@@ -7,11 +7,26 @@
   justify-content: center; 
   align-items: center;
   text-align: center;
-  padding-top: 50px;
+  margin-top: 8%;
+  padding: 8%;
 }
 
 .about-container{
     padding: 0 50px;
+}
+
+.about-container .education{
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.education .certification{
+  text-align: left;
+}
+.year{
+  text-align: left;
+  margin-left: 200px;
 }
 
 .titleskillssection h3 {
@@ -41,7 +56,7 @@
 .grid-three-col{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0px
 }
 
 .img-txt {
@@ -52,4 +67,8 @@
 .taille-img {
   height: 60px;
   width: 60px;
+}
+
+.opacity{
+  opacity: 0.6;
 }

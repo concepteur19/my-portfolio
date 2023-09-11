@@ -37,12 +37,24 @@ function About() {
       <div className="about-container">
         <Title title="Education" class="title" />
         <div className="education">
-          <Title text="Computer Engineering"/> 2023 <br />
+          <div className="year">
+            <i class="fa fa-dot-circle" aria-hidden="true"></i> <span>2023 <br />
+              <span className="opacity">Douala,  Cameroun</span>
+            </span><br /> <br />
+            <span>2016 <br />
+              <span className="opacity">Bonaberi,  Douala</span>
+            </span>
+          </div>
+          <div className="certification">
+            <span> Computer Engineering <br />
+              <sapn className="opacity">Ecole Nationale Supérieure Polytechnique de Douala</sapn>
+            </span> <br /> <br />
+            <span> GCE Advance Level Option science <br />
+              <sapn className="opacity">GBHS of Bonaberi</sapn>
+            </span>
+          </div>
+        </div>
 
-        </div>
-        <div className="education">
-          <Title text="GCE Advance Level Option science"/> 2016 <br />
-        </div>
       </div>
 
       <div className="about-container">
