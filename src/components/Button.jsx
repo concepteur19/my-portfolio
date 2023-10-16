@@ -16,7 +16,9 @@ function Button(props) {
                 type={props.type}
                 onClick={props.click}
             > 
-                {props.text} 
+            
+                {props.text}
+                {props.icon}
             </button>
         </div>
     )

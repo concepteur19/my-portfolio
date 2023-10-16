@@ -6,15 +6,16 @@ import Button from "../components/Button";
 import img from "../assets/pro.jpeg";
 import "../styles/home.css";
 import cv from "../assets/cv.pdf";
+// import 
 
-function Home(props) {
-  const styleDark = {
-    boxShadow: "1px 1px 8px rgb(20, 1, 188)",
-  };
+function Home() {
+  // const styleDark = {
+  //   boxShadow: "1px 1px 8px rgb(20, 1, 188)",
+  // };
 
-  const styleLight = {
-    boxShadow: "1px 1px 8px #747474",
-  };
+  // const styleLight = {
+  //   boxShadow: "1px 1px 8px #747474",
+  // };
 
   return (
     <div className="fade-in-home home" id="home">
@@ -23,10 +24,10 @@ function Home(props) {
         <div className="vertical-line"></div>
         <div className="social-media">
 
-          <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="/twiter"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="/in"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="/wame"> <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="/g+"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
 
         </div>
         <div className="vertical-line"></div>
@@ -51,9 +52,11 @@ function Home(props) {
               portfolio to learn more.
             </div> <br />
 
-            <a href={cv} target="_blank">
+            <a href={cv} target="_blank" rel="noreferrer">
               <Button
-                text="Download cv"
+                text="Get resume"
+                // icon = {
+                // <i class="fa fa-download" aria-hidden="true"></i>}
               // mouseOver={props.handleMouseOver}
               // mouseDown={props.handleMouseDown}
               // style={props.isDarkMode ? styleDark : styleLight}
@@ -71,7 +74,7 @@ function Home(props) {
           <div className="citation-container">
             <span className="quote-left">❝</span> <br />
             <span className="content">
-              Tu te mens en t'disant que tu vas tout niquer, un athée qui taffe quasi tous les jours aura toujours plus d’opportunités
+              Tu te mens en t'disant que tu vas tout niquer, un athée qui taffe quasi tous les jours, aura toujours plus d’opportunités ...
             </span><br />
             <span className="quote-right">❞</span> <br />
             <span className="author">
