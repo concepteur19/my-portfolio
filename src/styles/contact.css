@@ -61,20 +61,20 @@ textarea {
 
 .h1 {
   font-family: poppins "amole", "Amtyara Script";
-  font-size: 25px;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: 300;
 }
 
 .h2 {
   font-family: poppins "amole" "Amtyara Script";
-  font-size: 20px;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: 300;
 }
 
 .social-media a {
-  font-size: 10px;
+  font-size: 0.7rem;
   text-decoration: none;
   text-align: center;
   animation: slide-up 1s ease-in-out;
@@ -119,6 +119,41 @@ a .svg {
 }
 
 .container-form{
-  width: 500px;
+  width: 30rem;
   margin-left: 100px;
+}
+
+@media (max-width: 992px) {
+  .fade-in-contact {
+    padding: 0% 10% ;
+  }
+
+  .container-form{
+    width: 27rem;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fade-in-contact {
+    padding: 0% 12% ;
+  }
+
+  .inner-contact{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container-form{
+    width: 25rem;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .container-form{
+    width: 23rem;
+    margin-left: 0px;
+  }
 }

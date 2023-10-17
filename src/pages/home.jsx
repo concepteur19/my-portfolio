@@ -24,10 +24,10 @@ function Home() {
         <div className="vertical-line"></div>
         <div className="social-media">
 
-          <a href="/twiter"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="/in"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="/wame"> <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a href="/g+"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="/twiter"> <i class="icn fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="/in"> <i class="icn fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="/wame"> <i class="icn fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="/g+"> <i class="icn fa fa-google-plus" aria-hidden="true"></i></a>
 
         </div>
         <div className="vertical-line"></div>
@@ -52,11 +52,11 @@ function Home() {
               portfolio to learn more.
             </div> <br />
 
-            <a href={cv} target="_blank" rel="noreferrer">
+            <a href={cv} target="_blank" rel="noreferrer" >
               <Button
                 text="Get resume"
-                // icon = {
-                // <i class="fa fa-download" aria-hidden="true"></i>}
+                icon = {
+                <i class="fa fa-arrow-circle-right" aria-hidden="true" style={{marginLeft: '10px', cursor: 'pointer', }}></i>}
               // mouseOver={props.handleMouseOver}
               // mouseDown={props.handleMouseDown}
               // style={props.isDarkMode ? styleDark : styleLight}
