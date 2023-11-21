@@ -6,9 +6,18 @@ function ProjectCard(props) {
       <img src={props.src} alt={props.alt} />
       <p>
         {" "}
-        <span className="name">{props.name}</span> <br />{" "}
-        <span className="description"> {props.description}</span> <br />{" "}
-        <a href={props.link}>Visit Here</a>{" "}
+        <span className="name-project">{props.name}</span> <br />{" "}
+        {/* <span className="description"> {props.description}</span> <br />{" "} */}
+        <div className="link-div">
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <a href={props.link} className="link-a" >Visit Here</a>{" "}
+        </div>
+        {props.children}
+
+        {/* <div>
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </div> */}
+        
       </p>
     </div>
   );

@@ -4,43 +4,61 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8%;
-  padding: 8%;
+  /* margin-top: 8%; */
+  padding: 8% 3% 0 3%;
   /* min-height: 100vh; */
   /* padding: 5rem 0rem 0 0rem ; */
 }
 
-.item img {
-    border-radius: 1.3rem;
+.project-card img {
     width: 100%; 
-    height: 100%;
-    pointer-events: none;
+    height: 180px;
+    pointer-events:all;
     align-self: center;
+    border-radius: 1.3rem 0;
   }
-  
-  .item p {
+
+  /* .project-card img:hover {
+    box-shadow: 0 0 6px rgb(161, 161, 161);
+  } */
+  /* .project-card p {
     width: 100%; 
     height: 10%
-  }
+  } */
   
-  .item {
-    min-height: 25rem;
-    min-width: 15rem;
-    padding: 20px;
-    padding-right: 30px;
+  .project-card {
+    height: 250px;
+    width: 250px;
+    padding-bottom: 20px;
     text-align: center;
     border-radius: 1.3rem;
-    background-color: #4866ff2c;
-    margin-right: 20px;
-    box-shadow: 0px 2px 5px rgba(28, 28, 28, 0.084);
+    background-color: #141c41;
+  }
+
+  .light-theme .project-card {
+    background-color: #ffffff;
+    /* margin-right: 20px; */
+    box-shadow: 0px 2px 4px rgba(28, 28, 28, 0.084);
+  }
+
+  .light-theme .project-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.285);
+  }
+
+  .project-card:hover {
+    box-shadow: 0 0 15px #ffffff22;
   }
   
-  .item p a {
+  .project-card p a {
     text-decoration: none;
+    color: #f5f5f5;
+  }
+  .light-theme .project-card p a {
+    color: #111;
   }
   
-  .item p a:hover {
-    text-decoration: underline blue;
+  .project-card p a:hover {
+    text-decoration: none;
   }
   
   .inner-carousel {
@@ -56,7 +74,7 @@
     
   }
   
-  p span.name {
+  p span.name-project {
     font-weight: 500;
     font-size: x-large;
   }
@@ -69,6 +87,25 @@
     font-weight: 300;
     font-size: 35px;
   }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+@media (max-width: 992px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
 
   
 

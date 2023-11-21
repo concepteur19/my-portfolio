@@ -7,26 +7,41 @@
   justify-content: center; 
   align-items: center;
   text-align: center;
-  margin-top: 8%;
-  padding: 8%;
+  margin: 8% 8% 0 8% 
 }
 
 .about-container{
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 
-.about-container .education{
-  
+.about-container .edu-work{
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: start;
+  /* padding: 0 0px 0 100px; */
+}
+
+.about-container .education-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  
 }
 
-.education .certification{
+.education-container .line {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  
+}
+
+.education-container .certification{
   text-align: left;
+  /* margin-left: 40px */
 }
 .year{
   text-align: left;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 
 .titleskillssection h3 {
@@ -44,7 +59,7 @@
 .about-inner-container-other{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -72,3 +87,10 @@
 .opacity{
   opacity: 0.6;
 }
+
+.title-left h3{
+  text-align: left;
+  font-size: 20px;
+  font-weight:400 !important;
+}
+.title{}

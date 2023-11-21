@@ -35,30 +35,104 @@ function About() {
   return (
     <div id="about-section">
       <div className="about-container">
-        <Title title="Education" class="title" />
-        <div className="education">
-          <div className="year">
-            <i class="fa fa-dot-circle" aria-hidden="true"></i> <span>2023 <br />
-              <span className="opacity">Douala,  Cameroun</span>
-            </span><br /> <br />
-            <span>2016 <br />
-              <span className="opacity">Bonaberi,  Douala</span>
-            </span>
+        <div className="edu-work">
+          <div className="work">
+            <Title title="Work experience" class="title-left" />
+            <div className="education-container">
+              <div className="line">
+                <div className="year">
+                  <span>
+                    08-2023 to Now <br />
+                    <span className="opacity">Bonamoussadi, Douala</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Frontend Web developper <br />
+                    <sapn className="opacity">2SI-inc</sapn>
+                  </span>{" "}
+                </div>
+              </div>
+              <div className="line">
+                <div className="year">
+                  <span>
+                    02-2023 to 06-2023 <br />
+                    <span className="opacity">Bonamoussadi, Douala</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Intern web and mobile developper <br />
+                    <sapn className="opacity">2SI-inc</sapn>
+                  </span>{" "}
+                </div>
+              </div>
+              <div className="line">
+                <div className="year">
+                  <span>
+                    07-2022 to 08-2022 <br />
+                    <span className="opacity"> Banganté, West - CMR</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Intern backend web developper <br />
+                    <sapn className="opacity">GLOOM SARL</sapn>
+                  </span>{" "}
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="certification">
-            <span> Computer Engineering <br />
-              <sapn className="opacity">Ecole Nationale Supérieure Polytechnique de Douala</sapn>
-            </span> <br /> <br />
-            <span> GCE Advance Level Option science <br />
-              <sapn className="opacity">GBHS of Bonaberi</sapn>
-            </span>
+
+          <div className="education">
+            <Title title="Education" class="title-left" />
+            <div className="education-container">
+              <div className="line">
+                <div className="year">
+                  <span>
+                    2023 <br />
+                    <span className="opacity">Douala, Cameroun</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Computer Engineering <br />
+                    <sapn className="opacity">
+                      Ecole Nationale Supérieure Polytechnique de Douala
+                    </sapn>
+                  </span>{" "}
+                </div>
+              </div>
+
+              <div className="line">
+                <div className="year">
+                  <span>
+                    2016 <br />
+                    <span className="opacity">Bonaberi, Douala</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Baccalauréat C(scientifique) <br />
+                    <sapn className="opacity">GBHS of Bonaberi</sapn>
+                  </span>{" "}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <div className="about-container">
-        <Title title="Skills" class="title" />
+        <Title title="Skills" class="title " />
 
         <div className="about-inner-container">
           <div className="skills-section">
@@ -202,32 +276,6 @@ function About() {
           animation: fade-in-contact 1s ease-in forwards animation:
           fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
           ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
-          ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
-          animation: fade-in-contact 1s ease-in forwards; animation:
-          fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
           ease-in forwards;
         </div>
       </div>
