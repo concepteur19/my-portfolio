@@ -33,7 +33,7 @@ import power from "../assets/icons/power.png";
 
 function About() {
   return (
-    <div id="about-section">
+    <div id="about-section" style={{marginTop: '10%'}}>
       <div className="about-container">
         <span className="before-title">Get to know</span>
         <Title title="About Me" class="titles-about"></Title>
@@ -169,178 +169,43 @@ function About() {
           </div>
         </div>
 
-        <div style={{marginTop: '4%'}}>
+        <div style={{marginTop: '10%'}}>
           <span className="before-title">What skills i have</span>
           <Title title="Skills" class="titles-about" />
-          <div className="card">
-            <Title title="Front-end Development" className="titles-skills" />
 
-            <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px'}}>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={html} alt="" /> HTML</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={css} alt="" /> CSS</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={javascript} alt="" /> Javascript</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={typescript} alt="" /> Typescript</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={bootstrap} alt="" /> Bootstrap </div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={tailwind} alt="" /> Tailwind</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={angular} alt="" />Angular</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={react} alt="" /> React Js</div>
-              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={next} alt="" />Next Js</div>
+          <div style={{display: 'flex'}}> 
+            <div className="card">
+              <Title title="Front-end Development" className="titles-skills" />
+
+              
+              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '15px'}}>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={html} alt="" /> HTML</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={css} alt="" /> CSS</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={javascript} alt="" /> Javascript</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={typescript} alt="" /> Typescript</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={bootstrap} alt="" /> Bootstrap </div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={tailwind} alt="" /> Tailwind</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={angular} alt="" />Angular</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={react} alt="" /> React Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={next} alt="" />Next Js</div>
+              </div>
+            </div>
+
+            <div className="card">
+              <Title title="Backend Development" className="titles-skills" />
+
+              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px'}}>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={node} alt="" /> Node Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={ex} alt="" /> Express Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={laravel} alt="" /> Laravel</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={sql} alt="" /> MySQL</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={mongo} alt="" />Mongo DB</div>
+              </div>
+                
             </div>
           </div>
-
-          <div className="card">
-            <Title title="Backend Development" className="titles-skills" />
-
-            <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
+          
         </div>
-
-        
-{/* 
-        <div className="about-inner-container">
-          <div className="skills-section">
-            <Title title="Front-end Development" class="titleskillssection" />
-
-            <div className="grid-three-col">
-              <div className="img-txt">
-                <img className="taille-img" src={html} alt="" /> <br />
-                <span>HTML5</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={css} alt="" /> <br />
-                <span>CSS3</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={bootstrap} alt="" /> <br />
-                <span>Bootstrap</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={tailwind} alt="" /> <br />
-                <span>Tailwind CSS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={javascript} alt="" /> <br />
-                <span>Javascript</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={react} alt="" /> <br />
-                <span>React JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={next} alt="" /> <br />
-                <span>Next JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={angular} alt="" /> <br />
-                <span>Angular JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={typescript} alt="" /> <br />
-                <span>Typescript</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-section">
-            <Title title="Back-end Development" class="titleskillssection" />
-
-            <div className="grid-three-col">
-              <div className="img-txt">
-                <img className="taille-img" src={node} alt="" /> <br />
-                <span>Node JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={ex} alt="" /> <br />
-                <span>Express JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={typescript} alt="" /> <br />
-                <span>Typescript</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={nest} alt="" /> <br />
-                <span>Nest JS</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={laravel} alt="" /> <br />
-                <span>Laravel</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={sql} alt="" /> <br />
-                <span>MySQL</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={mongo} alt="" /> <br />
-                <span>Mongo db</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={mongos} alt="" /> <br />
-                <span>Mongoose</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="about-inner-container-other">
-          <div className="skills-section">
-            <Title title="Others" class="titleskillssection" />
-
-            <div className="grid-three-col">
-              <div className="img-txt">
-                <img className="taille-img" src={xd} alt="" /> <br />
-                <span>Adobe XD</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={gitlab} alt="" /> <br />
-                <span>GitLab</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={github} alt="" /> <br />
-                <span>GitHub</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={postman} alt="" /> <br />
-                <span>Postman</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={office} alt="" /> <br />
-                <span>Ms Office</span>
-              </div>
-
-              <div className="img-txt">
-                <img className="taille-img" src={power} alt="" /> <br />
-                <span>Power AMC</span>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <div className="about-container">
           <Title title="Services" class="title" />
