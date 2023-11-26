@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/navbar.css";
 import src from "../assets/icons/icons8-sun-15.png";
 import src2 from "../assets/icons/icons8-moon-30.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
   const ligthOrDarkMode = props.ligthOrDarkMode;

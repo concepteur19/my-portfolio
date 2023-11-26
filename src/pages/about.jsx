@@ -35,9 +35,30 @@ function About() {
   return (
     <div id="about-section">
       <div className="about-container">
+        <span className="before-title">Get to know</span>
+        <Title title="About Me" class="titles-about"></Title>
+        <div className="ex-cl-pr">
+          <div className="card">
+            <span></span>
+            <span className="ex">Experience</span><br />
+            <span>1+ Year Working</span>
+          </div>
+
+          <div className="card cl">
+            <span></span>
+            <span>Clients</span> <br />
+            <span>Just 5 Actually</span>
+          </div>
+
+          <div className="card projects">
+            <span></span>
+            <span>Projects</span> <br />
+            <span>6+ Completed</span>
+          </div>
+        </div>
         <div className="edu-work">
           <div className="work">
-            <Title title="Work experience" class="title-left" />
+            <Title title="Work experience" class="title-left title-center" />
             <div className="education-container">
               <div className="line">
                 <div className="year">
@@ -82,8 +103,24 @@ function About() {
                 <div className="certification">
                   <span>
                     {" "}
-                    Intern backend web developper <br />
+                    Intern web developper <br />
                     <sapn className="opacity">GLOOM SARL</sapn>
+                  </span>{" "}
+                </div>
+              </div>
+              <div className="line">
+                <div className="year">
+                  <span>
+                    07-2021 to 08-2021 <br />
+                    <span className="opacity"> Bonapriso, Douala</span>
+                  </span>
+                </div>
+
+                <div className="certification">
+                  <span>
+                    {" "}
+                    Intern web developper <br />
+                    <sapn className="opacity">LUGAR SARL</sapn>
                   </span>{" "}
                 </div>
               </div>
@@ -91,7 +128,7 @@ function About() {
           </div>
 
           <div className="education">
-            <Title title="Education" class="title-left" />
+            <Title title="Education" class="title-left title-center" />
             <div className="education-container">
               <div className="line">
                 <div className="year">
@@ -132,8 +169,42 @@ function About() {
           </div>
         </div>
 
-        <Title title="Skills" class="title " />
+        <div style={{marginTop: '4%'}}>
+          <span className="before-title">What skills i have</span>
+          <Title title="Skills" class="titles-about" />
+          <div className="card">
+            <Title title="Front-end Development" className="titles-skills" />
 
+            <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px'}}>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={html} alt="" /> HTML</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={css} alt="" /> CSS</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={javascript} alt="" /> Javascript</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={typescript} alt="" /> Typescript</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={bootstrap} alt="" /> Bootstrap </div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={tailwind} alt="" /> Tailwind</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={angular} alt="" />Angular</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={react} alt="" /> React Js</div>
+              <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={next} alt="" />Next Js</div>
+            </div>
+          </div>
+
+          <div className="card">
+            <Title title="Backend Development" className="titles-skills" />
+
+            <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+        </div>
+
+        
+{/* 
         <div className="about-inner-container">
           <div className="skills-section">
             <Title title="Front-end Development" class="titleskillssection" />
@@ -269,7 +340,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="about-container">
           <Title title="Services" class="title" />

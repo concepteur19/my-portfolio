@@ -4,7 +4,7 @@ import "../styles/button.css"
 function Button(props) {
 
     return (
-        <div>
+        <span>
 
             {/* <button onClick={handleClick} onMouseOver={props.over} onMouseDown={props.over}> </button> */}
             <button
@@ -19,7 +19,7 @@ function Button(props) {
                 {props.text}
                 {props.icon}
             </button>
-        </div>
+        </span>
     )
 }
 

@@ -55,22 +55,32 @@ function Home() {
             <a href={cv} target="_blank" rel="noreferrer" >
               <Button
                 text="Get resume"
+                style={{cursor: 'pointer'}}
                 icon = {
-                <i class="fa fa-arrow-circle-right" aria-hidden="true" style={{marginLeft: '10px', cursor: 'pointer', }}></i>}
+                <i class="fa fa-arrow-circle-right" aria-hidden="true" style={{marginLeft: '10px'}}></i>}
               // mouseOver={props.handleMouseOver}
               // mouseDown={props.handleMouseDown}
               // style={props.isDarkMode ? styleDark : styleLight}
               />
-            </a> <br />
-
-          </div>
+            </a>
+            
+            <Button
+                text="Let's talk"
+                style={{marginLeft: '10px', cursor: 'pointer'}}
+                icon = {
+                <i class="fa fa-pencil" aria-hidden="true" style={{marginLeft: '10px' }}></i>}
+              // mouseOver={props.handleMouseOver}
+              // mouseDown={props.handleMouseDown}
+              // style={props.isDarkMode ? styleDark : styleLight}
+              />
+          </div> <br />
 
           <div className="img1 right">
             <img src={img} alt="professional_image" className="profile-img" />
           </div>
         </div>
 
-        <div className="citation">
+        {/* <div className="citation">
           <div className="citation-container">
             <span className="quote-left">❝</span> <br />
             <span className="content">
@@ -81,7 +91,7 @@ function Home() {
               M. Damso
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 

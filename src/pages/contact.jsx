@@ -14,6 +14,10 @@ const styles = {
   justifyContent: "space-around"
 }
 
+function contactForm() {
+
+}
+
 function Contact(props) {
   return (
     <div className="fade-in-contact" id="contact">
@@ -55,8 +59,7 @@ function Contact(props) {
         <div className="container-form">
           <form
             className="contact-form"
-            action="https://www.google.com"
-            method="post"
+            onSubmit={contactForm()}
           >
             <div className="input-container">
               <Input
