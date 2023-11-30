@@ -1,5 +1,5 @@
 {
-  "homepage": "http://concepteur19.github.io/",
+  "homepage": "http://concepteur19.github.io/my-portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +22,8 @@
   "scripts": {
     "start": "react-scripts start --host 0.0.0.0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "deploy": "gh-pages -d build -r http://concepteur19.github.io/my-portfolio ",
+    "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
