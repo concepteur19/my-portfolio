@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b5c24e5f.css",
-    "main.js": "/my-portfolio/static/js/main.38e9d534.js",
+    "main.css": "/my-portfolio/static/css/main.179fd374.css",
+    "main.js": "/my-portfolio/static/js/main.bca27280.js",
     "static/media/ecom.jpg": "/my-portfolio/static/media/ecom.5f87ef75e0b5d3251038.jpg",
     "static/media/portfolio.jpg": "/my-portfolio/static/media/portfolio.2cadb8429486da7788ce.jpg",
     "static/media/CSM.jpg": "/my-portfolio/static/media/CSM.1e502e572383bf4d500b.jpg",
     "static/media/CJS-todo.jpg": "/my-portfolio/static/media/CJS-todo.021e803156a946e43f28.jpg",
     "static/media/cv.pdf": "/my-portfolio/static/media/cv.866c2c136982f092b89d.pdf",
     "static/media/pro.jpeg": "/my-portfolio/static/media/pro.1117066c24f21dc72430.jpeg",
-    "static/media/nest.png": "/my-portfolio/static/media/nest.de54a79df6321583eea8.png",
-    "static/media/power.png": "/my-portfolio/static/media/power.6f1bd206b9b06ac32964.png",
-    "static/media/logo-postman.png": "/my-portfolio/static/media/logo-postman.926b2d9ae11a8445a05a.png",
     "static/media/nextjs.png": "/my-portfolio/static/media/nextjs.644e86ec6ae8d96c7ebd.png",
     "static/media/icons8-react-100.png": "/my-portfolio/static/media/icons8-react-100.f268964f328ad9db0a9c.png",
     "index.html": "/my-portfolio/index.html",
-    "main.b5c24e5f.css.map": "/my-portfolio/static/css/main.b5c24e5f.css.map",
-    "main.38e9d534.js.map": "/my-portfolio/static/js/main.38e9d534.js.map"
+    "main.179fd374.css.map": "/my-portfolio/static/css/main.179fd374.css.map",
+    "main.bca27280.js.map": "/my-portfolio/static/js/main.bca27280.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5c24e5f.css",
-    "static/js/main.38e9d534.js"
+    "static/css/main.179fd374.css",
+    "static/js/main.bca27280.js"
   ]
 }
