@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
-import src from '../assets/icons/icons8-sun-15.png'
-import src2 from '../assets/icons/icons8-moon-30.png'
+import src from "../assets/icons/icons8-sun-15.png";
+import src2 from "../assets/icons/icons8-moon-30.png";
+// import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
-
   const ligthOrDarkMode = props.ligthOrDarkMode;
 
   const [gotClicked, setGotClicked] = useState(false);
@@ -29,14 +29,15 @@ function Navbar(props) {
       <nav className="nav-bar">
         <a href="/" className="logo">
           {" "}
-          PORTFOLIO{" "}
+          TCHOMGUI{" "}
         </a>
-        <button onClick={handleClick} className="hambuger">
+        
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-4 w-4 hambuger"
             viewBox="0 0 20 20"
-            fill="rgb(20, 1, 188)"
+            fill="#111"
+            onClick={handleClick}
           >
             <path
               fillRule="evenodd"
@@ -44,28 +45,50 @@ function Navbar(props) {
               clipRule="evenodd"
             />
           </svg>
-        </button>
+        
 
-        <button className="theme-button" onClick={props.click} style={ligthOrDarkMode? { backgroundColor: "#f5f5f5", color: "#111", border: '1px solid #d9d9d9' }: {backgroundColor: "#111", color: "#f5f5f5", border: "1px solid #d9d9d9"}  }>
-
+        <button
+          className="theme-button"
+          onClick={props.click}
+          style={
+            ligthOrDarkMode
+              ? {
+                  backgroundColor: "#f5f5f5",
+                  color: "#111",
+                  border: "1px solid #d9d9d9",
+                }
+              : {
+                  backgroundColor: "#111",
+                  color: "#f5f5f5",
+                  border: "1px solid #d9d9d9",
+                }
+          }
+        >
           {!ligthOrDarkMode ? (
             <div className="button-div">
-              <span><img src={src} alt="" /></span>
-              <span>Light mode</span>
+              <span>
+                <img src={src} alt="" />
+              </span>
+              <span className="button-text">Light mode</span>
             </div>
-
-          ) : (<div className="button-div">
-            <span><img src={src2} alt="" /></span>
-            <span>Dark mode</span> 
-          </div>
-
+          ) : (
+            <div className="button-div">
+              <span>
+                <img src={src2} alt="" />
+              </span>
+              <span className="button-text">Dark mode</span>
+            </div>
           )}
         </button>
 
         <div className={`nav-menu ${gotClicked ? "expanded" : ""}`}>
           <ul>
             <li>
-              <a className={props.pathname === "#home" ? "active" : ""} href="#home">
+            {/* <NavLink to="#home">Home</NavLink> */}
+              <a
+                className={props.pathname === "#home" ? "active" : ""}
+                href="#home"
+              >
                 Home
               </a>
             </li>
@@ -87,7 +110,7 @@ function Navbar(props) {
                 Projects
               </a>
             </li>
-            
+
             <li>
               <a
                 href="#contact"

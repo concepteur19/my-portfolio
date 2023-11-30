@@ -4,11 +4,10 @@
 
 input {
     font-display:initial;
-    width: 306.5px;
-    height: 40px;
+    height: 50px;
     border-radius: 3.5px;
     border: none;
     font-family: Poppins;
     font-size: 12.5px;
-    padding-left: 5px ;
+    padding-left: 10px ;
 }
