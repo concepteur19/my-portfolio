@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5c24e5f.css",
+    "main.js": "/static/js/main.445614db.js",
+    "static/media/ecom.jpg": "/static/media/ecom.5f87ef75e0b5d3251038.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.2cadb8429486da7788ce.jpg",
+    "static/media/CSM.jpg": "/static/media/CSM.1e502e572383bf4d500b.jpg",
+    "static/media/CJS-todo.jpg": "/static/media/CJS-todo.021e803156a946e43f28.jpg",
+    "static/media/cv.pdf": "/static/media/cv.866c2c136982f092b89d.pdf",
+    "static/media/pro.jpeg": "/static/media/pro.1117066c24f21dc72430.jpeg",
+    "static/media/nest.png": "/static/media/nest.de54a79df6321583eea8.png",
+    "static/media/power.png": "/static/media/power.6f1bd206b9b06ac32964.png",
+    "static/media/logo-postman.png": "/static/media/logo-postman.926b2d9ae11a8445a05a.png",
+    "static/media/nextjs.png": "/static/media/nextjs.644e86ec6ae8d96c7ebd.png",
+    "static/media/icons8-react-100.png": "/static/media/icons8-react-100.f268964f328ad9db0a9c.png",
+    "index.html": "/index.html",
+    "main.b5c24e5f.css.map": "/static/css/main.b5c24e5f.css.map",
+    "main.445614db.js.map": "/static/js/main.445614db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5c24e5f.css",
+    "static/js/main.445614db.js"
+  ]
+}
