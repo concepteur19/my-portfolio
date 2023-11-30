@@ -7,7 +7,7 @@
   justify-content: center; 
   align-items: center;
   text-align: center;
-  margin: 4% 8% 0 8% 
+  padding: 8% 4%;
 }
 
 .about-container{
@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;
+  margin-top: 4%;
 }
 
 .before-title{
@@ -24,8 +25,36 @@
 
 .titles-about h3{
   margin-top: -25px !important;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 400;
+}
+
+.titles-skills h3{
+  margin-top: -25px ;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title-s {
+  margin-top: -40px;
+}
+
+.card{
+  box-shadow: 0 0px 6px rgba(137, 137, 137, 0.349);
+  border-radius: 7px;
+  margin-inline: 12px;
+}
+
+.card-stats {
+  padding: 20px;
+}
+
+.card-skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding:25px 40px;
 }
 
 .about-container .ex-cl-pr{
@@ -33,23 +62,14 @@
   justify-content: space-between;
 }
 
-.card{
-  box-shadow: 0 0px 6px rgba(137, 137, 137, 0.349);
-  border-radius: 7px;
-  padding: 20px;
-  margin-block: 0 20px;
-  margin-inline: 20px;
-}
-
-.ex{
+.text-stat-1{
   font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(123, 123, 123, 0.962);
 }
 
 .about-container .edu-work{
   margin-top: 4%;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: start; */
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   gap: 30px;
@@ -57,7 +77,6 @@
 
 .about-container .education-container{
   display: grid;
-  /* width: fit-content; */
   gap: 5px;
 }
 
@@ -77,6 +96,7 @@
   text-align: left;
   margin-left: 40px
 }
+
 .year{
   text-align: left;
   /* margin-left: 200px; */
@@ -120,6 +140,8 @@
 .taille-img {
   height: 18px;
   width: 18px;
+
+  margin-right: 10px;
 }
 
 .opacity{
@@ -129,15 +151,15 @@
 .title-left h3{
   text-align: center;
   margin-right: 70px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .work {
   font-size: 0.85rem;
   border-radius: 7px;
   padding: 0 0px 50px 50px;
-  box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349)
+  box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
 }
 
 .education {
@@ -148,31 +170,102 @@
   /* height: max-content; */
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1219px) {
   .about-container .edu-work {
     grid-template-columns: 1fr;
   }
 
-  .work {
-    
-    border-radius: 10px;
-    padding: 0 0px 70px 85px;
-    box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
-
-  }
-
-  /* .work .title {
-    text-align: center;
-  } */
   .title-left h3{
     text-align: center;
     margin-right: 70px;
   }
   
-  .education {
-    border-radius: 10px;
-    padding: 0px 0px 70px 70px;
+}
+
+/* laptop */
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 992px) {
+  .title-left h3{
+    font-size: 1.4rem;
+  }
+  
+}
+  /* end laptop */
+
+
+
+  /* Tablet */
+ @media (max-width: 768px) {
+  
+  .title-left h3{
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+@media (max-width: 576px) {
+  .work {
+    font-size: 0.7rem;
+    padding: 0 0px 30px 30px;
     box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
-    height: max-content;
+  }
+  
+  .education {
+    font-size: 0.7rem;
+    padding: 0 0px 30px 30px;
+    box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
+    /* height: max-content; */
+  }
+  
+  #about-section {
+    padding: 12% 4%;
+  }
+
+  .about-container .education-container{
+    display: grid;
+    gap: 5px;
+  }
+
+  .card{
+    margin-inline: 8px;
+  }
+
+  .card-stats {
+    padding: 20px 17px;
+  }
+
+  .about-container .ex-cl-pr{
+    font-size: 0.8rem;
+  }
+  
+  .text-stat-1{
+    font-size: 0.8rem;
+  }
+  
+  .work  .education-container .line {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+  }
+  
+  .education .education-container .line {
+    display: grid;
+    grid-template-columns: 0.4fr 0.7fr;
+    
+  }
+  
+  .education-container .certification{
+    text-align: left;
+    margin-left: 40px
+  }
+
+  .title-left h3{
+    font-size: 1.2rem;
   }
 }

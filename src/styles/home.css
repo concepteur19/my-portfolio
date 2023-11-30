@@ -1,6 +1,8 @@
 .home {
   width: fit-content;
-  padding: 8% 3% 0 3%;
+  padding: 8% 4%;
+  display: flex;
+  align-items: center;
 }
 
 .fade-in-home {
@@ -13,6 +15,7 @@
     padding: 0 7%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -91,7 +94,7 @@
 }
 
 .section-social {
-  margin-top: 13%;
+  margin-top: 4%;
   
   position: absolute;
 }
@@ -296,7 +299,7 @@
 
   .section-up {
     & .left {
-      width: 65%;
+      width: 90%;
       margin-right: 0;
     }
   }
@@ -308,8 +311,8 @@
 
   .right {
     & .profile-img {
-      width: 22rem;
-      border-radius: 5%;
+      width: 25rem;
+      border-radius: 2%;
       box-shadow: 0 1px 12px rgba(0, 0, 0, 0.191);
     }
   }
@@ -353,7 +356,7 @@
     
       & .citation-container {
         padding: 5px;
-        width: 75%;
+        width: 90%;
         font-family: "poppins";
         text-align: center;
         font-size: 1.1rem;
@@ -377,7 +380,7 @@
 
   .section-up {
     & .left {
-      width: 80%;
+      /* width: 100%; */
     }
   
     & .right {
@@ -385,15 +388,15 @@
     }
   }
   
-  .right {
+  /* .right {
     & .profile-img {
       border-radius: 1%;
     }
-  }
+  } */
 
   .right {
     & .profile-img {
-      width: 17rem;
+      width: 19rem;
       border-radius: 2%;
       box-shadow: 0 1px 12px rgba(0, 0, 0, 0.191);
     }

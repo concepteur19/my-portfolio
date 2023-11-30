@@ -17,48 +17,48 @@ import typescript from "../assets/icons/typescript_original_logo_icon_146317.png
 //back-end
 import node from "../assets/icons/icons8-nodejs-96.png";
 import ex from "../assets/icons/ex.png";
-import nest from "../assets/icons/nest.png";
+// import nest from "../assets/icons/nest.png";
 import laravel from "../assets/icons/icons8-laravel-100 (1).png";
 import sql from "../assets/icons/icons8-mysql-logo-96.png";
 import mongo from "../assets/icons/icons8-mongodb-144.png";
-import mongos from "../assets/icons/icons8-mongoose-48.png";
+// import mongos from "../assets/icons/icons8-mongoose-48.png";
 
-//others
-import xd from "../assets/icons/icons8-adobe-xd-48.png";
-import gitlab from "../assets/icons/gitlab_original_logo_icon_146503.png";
-import postman from "../assets/icons/logo-postman.png";
-import office from "../assets/icons/msoffice.png";
-import github from "../assets/icons/icons8-github-48.png";
-import power from "../assets/icons/power.png";
+// //others
+// import xd from "../assets/icons/icons8-adobe-xd-48.png";
+// import gitlab from "../assets/icons/gitlab_original_logo_icon_146503.png";
+// import postman from "../assets/icons/logo-postman.png";
+// import office from "../assets/icons/msoffice.png";
+// import github from "../assets/icons/icons8-github-48.png";
+// import power from "../assets/icons/power.png";
 
 function About() {
   return (
-    <div id="about-section" style={{marginTop: '10%'}}>
+    <div id="about-section" >
       <div className="about-container">
         <span className="before-title">Get to know</span>
         <Title title="About Me" class="titles-about"></Title>
         <div className="ex-cl-pr">
-          <div className="card">
+          <div className="card card-stats ">
             <span></span>
-            <span className="ex">Experience</span><br />
+            <span className="text-stat-1">Experience</span><br />
             <span>1+ Year Working</span>
           </div>
 
-          <div className="card cl">
+          <div className="card card-stats">
             <span></span>
-            <span>Clients</span> <br />
+            <span className="text-stat-1">Clients</span> <br />
             <span>Just 5 Actually</span>
           </div>
 
-          <div className="card projects">
+          <div className="card card-stats">
             <span></span>
-            <span>Projects</span> <br />
+            <span className="text-stat-1">Projects</span> <br />
             <span>6+ Completed</span>
           </div>
         </div>
         <div className="edu-work">
           <div className="work">
-            <Title title="Work experience" class="title-left title-center" />
+            <Title title="Work experience" class="title-left" > </Title>
             <div className="education-container">
               <div className="line">
                 <div className="year">
@@ -128,7 +128,7 @@ function About() {
           </div>
 
           <div className="education">
-            <Title title="Education" class="title-left title-center" />
+            <Title title="Education" class="title-left" />
             <div className="education-container">
               <div className="line">
                 <div className="year">
@@ -169,37 +169,37 @@ function About() {
           </div>
         </div>
 
-        <div style={{marginTop: '10%'}}>
+        <div className="about-container">
           <span className="before-title">What skills i have</span>
-          <Title title="Skills" class="titles-about" />
+          <Title title="Skills" class="title title-s" > </Title>
 
           <div style={{display: 'flex'}}> 
-            <div className="card">
-              <Title title="Front-end Development" className="titles-skills" />
+            <div className="card card-skills">
+              <Title title="Front-end Development" class="titles-skills" />
 
               
-              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '15px'}}>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={html} alt="" /> HTML</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={css} alt="" /> CSS</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={javascript} alt="" /> Javascript</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={typescript} alt="" /> Typescript</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={bootstrap} alt="" /> Bootstrap </div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={tailwind} alt="" /> Tailwind</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={angular} alt="" />Angular</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={react} alt="" /> React Js</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={next} alt="" />Next Js</div>
+              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gridColumnGap: '50px', gridRowGap: '10px'}}>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={html} alt="" /> HTML</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={css} alt="" /> CSS</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={javascript} alt="" /> Javascript</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={typescript} alt="" /> Typescript</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={bootstrap} alt="" /> Bootstrap </div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={tailwind} alt="" /> Tailwind</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={angular} alt="" />Angular</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={react} alt="" /> React Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={next} alt="" />Next Js</div>
               </div>
             </div>
 
-            <div className="card">
-              <Title title="Backend Development" className="titles-skills" />
+            <div className="card card-skills">
+              <Title title="Backend Development" class="titles-skills"> </Title>
 
-              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px'}}>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={node} alt="" /> Node Js</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={ex} alt="" /> Express Js</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={laravel} alt="" /> Laravel</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={sql} alt="" /> MySQL</div>
-                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img style={{marginRight: '5px'}} className="taille-img" src={mongo} alt="" />Mongo DB</div>
+              <div style={{textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', gridColumnGap: '50px', gridRowGap: '10px'}}>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={node} alt="" /> Node Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={ex} alt="" /> Express Js</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={laravel} alt="" /> Laravel</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={sql} alt="" /> MySQL</div>
+                <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center'}}> <img className="taille-img" src={mongo} alt="" />Mongo DB</div>
               </div>
                 
             </div>
@@ -207,8 +207,9 @@ function About() {
           
         </div>
 
-        <div className="about-container">
-          <Title title="Services" class="title" />
+        <div className="about-container" >
+          <span className="before-title">Which services i provide</span>
+          <Title title="Services" class="title title-s" />
           animation: fade-in-contact 1s ease-in forwards animation:
           fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
           ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
