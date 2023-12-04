@@ -1,6 +1,6 @@
 .home {
   width: fit-content;
-  padding: 8% 4%;
+  padding: 14% 4% 8% 4%;
   display: flex;
   align-items: center;
 }
@@ -94,7 +94,7 @@
 }
 
 .section-social {
-  margin-top: 4%;
+  margin-top: 5%;
   
   position: absolute;
 }

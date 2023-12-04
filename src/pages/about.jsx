@@ -60,7 +60,7 @@ function About() {
           <div className="work">
             <Title title="Work experience" class="title-left" > </Title>
             <div className="education-container">
-              <div className="line">
+              {/* <div className="line"> */}
                 <div className="year">
                   <span>
                     08-2023 to Now <br />
@@ -75,8 +75,8 @@ function About() {
                     <sapn className="opacity">2SI-inc</sapn>
                   </span>{" "}
                 </div>
-              </div>
-              <div className="line">
+              {/* </div> */}
+              {/* <div className="line"> */}
                 <div className="year">
                   <span>
                     02-2023 to 06-2023 <br />
@@ -91,8 +91,8 @@ function About() {
                     <sapn className="opacity">2SI-inc</sapn>
                   </span>{" "}
                 </div>
-              </div>
-              <div className="line">
+              {/* </div> */}
+              {/* <div className="line"> */}
                 <div className="year">
                   <span>
                     07-2022 to 08-2022 <br />
@@ -107,8 +107,8 @@ function About() {
                     <sapn className="opacity">GLOOM SARL</sapn>
                   </span>{" "}
                 </div>
-              </div>
-              <div className="line">
+              {/* </div>
+              <div className="line"> */}
                 <div className="year">
                   <span>
                     07-2021 to 08-2021 <br />
@@ -123,14 +123,14 @@ function About() {
                     <sapn className="opacity">LUGAR SARL</sapn>
                   </span>{" "}
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
 
           <div className="education">
             <Title title="Education" class="title-left" />
             <div className="education-container">
-              <div className="line">
+              {/* <div className="line"> */}
                 <div className="year">
                   <span>
                     2023 <br />
@@ -147,9 +147,9 @@ function About() {
                     </sapn>
                   </span>{" "}
                 </div>
-              </div>
+              {/* </div>
 
-              <div className="line">
+              <div className="line"> */}
                 <div className="year">
                   <span>
                     2016 <br />
@@ -164,7 +164,7 @@ function About() {
                     <sapn className="opacity">GBHS of Bonaberi</sapn>
                   </span>{" "}
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
