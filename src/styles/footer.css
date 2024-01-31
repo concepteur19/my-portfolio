@@ -25,9 +25,14 @@
   justify-content: space-between;
   gap: 15rem;
 
-  & .logo-footer span {
+  & .logo-footer a {
+    color: #f5f5f5;
+    text-decoration: none;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+  }
+  .light-theme & .logo-footer a {
+    color: #111;
   }
   & .menu-footer {
     margin-top: -10px;
@@ -67,10 +72,10 @@
   }
 }
 
-.dark-theme .logo-footer span span {
+.dark-theme .logo-footer a span {
   color: yellow;
 }
-.light-theme .logo-footer span span {
+.light-theme .logo-footer a span {
   color: #4866ff;
 }
 

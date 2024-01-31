@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import img from "../assets/pro.jpeg";
 import "../styles/home.css";
 import cv from "../assets/cv.pdf";
-// import 
+// import
 
 function Home() {
   // const styleDark = {
@@ -20,15 +20,36 @@ function Home() {
   return (
     <div className="fade-in-home home" id="home">
       <div className="section-social">
-
         <div className="vertical-line"></div>
         <div className="social-media">
-
-          <a href="/twiter"> <i class="icn fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="/in"> <i class="icn fa fa-linkedin" aria-hidden="true"></i></a>
-          <a href="/wame"> <i class="icn fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a href="/g+"> <i class="icn fa fa-google-plus" aria-hidden="true"></i></a>
-
+        <a href="https://linkedin.com/in/zobel-ulrich-nguening-tchomgui-825a01224/">
+            {" "}
+            <i class="icn fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/237697451979" target="_blank"
+            rel="noopener noreferrer">
+            {" "}
+            <i class="icn fa fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:zobel.tchomgui@gmail.com" target="_blank"
+            rel="noopener noreferrer">
+            {" "}
+            <i class="icn fa fa-google" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/concepteur19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-github icn" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/nguening" target="_blank"
+            rel="noopener noreferrer"> 
+            {" "}
+            <i class="icn fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          
+          
         </div>
         <div className="vertical-line"></div>
       </div>
@@ -39,42 +60,52 @@ function Home() {
             <div className="fadeIn-text">
               Hey there It's <br /> <span>Zobel Nguening</span>
             </div>
-
             <div className="fadeIn-text2">
               And I'm <span>Front-end Developper</span>
             </div>
-
             <div className="resume">
-              As a Sofware Engineer specializing in front-end
-              development, I create aesthetic and functional websites using principally Angular
+              As a Sofware Engineer specializing in front-end development, I
+              create aesthetic and functional websites using principally Angular
               and React. With a passion for improving my skills and working in
               teams, I aim to deliver a great user experience. Check out my
               portfolio to learn more.
-            </div> <br />
-
-            <a href={cv} target="_blank" rel="noreferrer" >
+            </div>{" "}
+            <br />
+            <a href={cv} target="_blank" rel="noreferrer">
               <Button
                 text="Get resume"
-                style={{cursor: 'pointer'}}
-                icon = {
-                <i class="fa fa-arrow-circle-right" aria-hidden="true" style={{marginLeft: '10px'}}></i>}
-              // mouseOver={props.handleMouseOver}
-              // mouseDown={props.handleMouseDown}
-              // style={props.isDarkMode ? styleDark : styleLight}
+                style={{ cursor: "pointer" }}
+                icon={
+                  <i
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                    style={{ marginLeft: "10px" }}
+                  ></i>
+                }
+                // mouseOver={props.handleMouseOver}
+                // mouseDown={props.handleMouseDown}
+                // style={props.isDarkMode ? styleDark : styleLight}
               />
             </a>
-            
+            <a href='#contact'>
             <Button
-                text="Let's talk"
-                style={{marginLeft: '10px', cursor: 'pointer'}}
-                icon = {
-                <i class="fa fa-pencil" aria-hidden="true" style={{marginLeft: '10px' }}></i>}
+              text="Let's talk"
+              style={{ marginLeft: "10px", cursor: "pointer" }}
+              icon={
+                <i
+                  class="fa fa-pencil"
+                  aria-hidden="true"
+                  style={{ marginLeft: "10px" }}
+                ></i>
+              }
               // mouseOver={props.handleMouseOver}
               // mouseDown={props.handleMouseDown}
               // style={props.isDarkMode ? styleDark : styleLight}
-              />
-          </div> <br />
-
+            />
+            </a>
+          </div>{" "}
+          
+          <br />
           <div className="img1 right">
             <img src={img} alt="professional_image" className="profile-img" />
           </div>
@@ -94,7 +125,6 @@ function Home() {
         </div> */}
       </div>
     </div>
-
   );
 }
 

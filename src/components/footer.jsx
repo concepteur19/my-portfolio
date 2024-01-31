@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="footer-container">
       <div className="lo-menu-rs">
         <div className="logo-footer">
-          <span className="cjs">
+          <a href="#home" className="cjs">
             {"<"} C <span>JS /{">"}</span>
-          </span>{" "}
+          </a>{" "}
           <br />
           {/* {'< concepteur'} <span>JS</span> {'/>'} <br /> */}
           {/* Software Engineer <br />
