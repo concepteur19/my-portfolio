@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.179fd374.css",
-    "main.js": "/my-portfolio/static/js/main.bca27280.js",
-    "static/media/ecom.jpg": "/my-portfolio/static/media/ecom.5f87ef75e0b5d3251038.jpg",
-    "static/media/portfolio.jpg": "/my-portfolio/static/media/portfolio.2cadb8429486da7788ce.jpg",
-    "static/media/CSM.jpg": "/my-portfolio/static/media/CSM.1e502e572383bf4d500b.jpg",
-    "static/media/CJS-todo.jpg": "/my-portfolio/static/media/CJS-todo.021e803156a946e43f28.jpg",
+    "main.css": "/my-portfolio/static/css/main.28e65176.css",
+    "main.js": "/my-portfolio/static/js/main.c410bc5e.js",
+    "static/media/loteryEC.PNG": "/my-portfolio/static/media/loteryEC.34706d11a2a8cb2d250d.PNG",
+    "static/media/VenusPay.PNG": "/my-portfolio/static/media/VenusPay.dc18121e4a5efb359219.PNG",
+    "static/media/portfolio.PNG": "/my-portfolio/static/media/portfolio.af052c7ad267694f4c4c.PNG",
+    "static/media/matension.PNG": "/my-portfolio/static/media/matension.041639bfec5875439670.PNG",
     "static/media/cv.pdf": "/my-portfolio/static/media/cv.866c2c136982f092b89d.pdf",
+    "static/media/venusSms.PNG": "/my-portfolio/static/media/venusSms.b0b3ea669074c0909fe9.PNG",
     "static/media/pro.jpeg": "/my-portfolio/static/media/pro.1117066c24f21dc72430.jpeg",
+    "static/media/mbfUP.PNG": "/my-portfolio/static/media/mbfUP.8a2f6dccf7d8cd85fac9.PNG",
     "static/media/nextjs.png": "/my-portfolio/static/media/nextjs.644e86ec6ae8d96c7ebd.png",
     "static/media/icons8-react-100.png": "/my-portfolio/static/media/icons8-react-100.f268964f328ad9db0a9c.png",
     "index.html": "/my-portfolio/index.html",
-    "main.179fd374.css.map": "/my-portfolio/static/css/main.179fd374.css.map",
-    "main.bca27280.js.map": "/my-portfolio/static/js/main.bca27280.js.map"
+    "main.28e65176.css.map": "/my-portfolio/static/css/main.28e65176.css.map",
+    "main.c410bc5e.js.map": "/my-portfolio/static/js/main.c410bc5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.179fd374.css",
-    "static/js/main.bca27280.js"
+    "static/css/main.28e65176.css",
+    "static/js/main.c410bc5e.js"
   ]
 }
