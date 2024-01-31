@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  /* margin-top: 8%; */
-  padding: 8% 8% 0 8%;
+  justify-content: center;
+  margin-block: 4% 12%;
+  padding: 8% 4%;
 }
 
 @keyframes fade-in-contact {
@@ -23,7 +23,7 @@
   /* background-color: #f3f3f3; */
   /* border: 1px solid #4866ff; */
   border-radius: 3px;
-  box-shadow: 0 1px 10px rgba(107, 107, 107, 0.384);
+  box-shadow: 0 1px 10px #4866ff5b;
 }
 
 .light-theme .contact a {
@@ -61,7 +61,7 @@ textarea {
 
 .h1 {
   font-family: poppins "amole", "Amtyara Script";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: 300;
 }
@@ -110,17 +110,20 @@ a .svg {
 
 .inner-contact{
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
 }
 .container-text{
   display: flex;
   flex-direction: column;
-  margin-right: px;
+  /* margin-right: px; */
 }
 
 .container-form{
   width: 30rem;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 @media (max-width: 992px) {
@@ -130,7 +133,7 @@ a .svg {
 
   .container-form{
     width: 27rem;
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
 }
 
@@ -140,13 +143,13 @@ a .svg {
   }
 
   .inner-contact{
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     text-align: center;
   }
 
   .container-form{
     width: 25rem;
-    margin-left: 0px;
+    /* margin-left: 0px; */
   }
 }
 
@@ -154,6 +157,5 @@ a .svg {
 
   .container-form{
     width: 23rem;
-    margin-left: 0px;
   }
 }

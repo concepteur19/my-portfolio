@@ -13,6 +13,7 @@ const projects = [
     image: images[0],
     description: "Work exp, education, projects",
     link: "https://www.CJS-portfolio.com",
+    tech: "#ReactJS"
   },
   // {
   //   name: "CSMedia",
@@ -22,37 +23,51 @@ const projects = [
   // },
   // additional projects
 
-  {
-    name: "Kahak",
-    image: images[2],
-    description: "loging and vehicule localtion",
-    link: "https://www.kahak.com",
-  },
+  // {
+  //   name: "Kahak",
+  //   // image: images[2],
+  //   maintenance: false,
+  //   description: "loging and vehicule localtion",
+  //   link: "https://www.kahak.com",
+  // },
   {
     name: "Loterie EC",
+    maintenance: false,
     image: images[3],
     description: "dv loterie registering candidate",
-    link: "https://www.dvloteriec.com",
+    link: "https://dvloteriec.com/",
   },
   {
     name: "My best follow up",
-    image: images[2],
-    description: "app for dabetic patient follow",
-    link: "https://www.dvloteriec.com",
+    maintenance: false,
+    image: images[1],
+    description: "app for diabetic patient follow",
+    link: "https://mybestfollowup.org/",
   },
   {
     name: "Ma tension",
-    image: images[2],
+    maintenance: false,
+    image: images[4],
     description: "app for dabetic patient follow",
-    link: "https://www.matension.com",
+    link: "https://admin.jeconnaismatension.org/",
   },
 
-  // {
-  //   name: "CJS-Ecom",
-  //   image: images[3],
-  //   description: "My personal e-commerce",
-  //   link: "https://www.CJS-Ecom.com",
-  // },
+  {
+    name: "Venus Pay",
+    maintenance: true,
+    image: images[2],
+    description: "Online payment solution",
+    link: "https://venuspay.2si-inc.com/",
+    tech: "#Angular"
+  },
+  {
+    name: "Venus SMS",
+    maintenance: true,
+    image: images[5],
+    description: "Online bulk messaging solution",
+    link: "https://venussms.2si-inc.com/",
+    tech: "#Angular"
+  }
 ];
 
 function Projects() {
@@ -65,9 +80,9 @@ function Projects() {
 
   return (
     <div className="container" id="projects">
-      <div>
-        <Title title="My Projects" class="title" />
-      </div>
+      <span className="before-title" style={{margin: '0px'}}> This are projects i've handle </span>
+        <Title title="My Projects" class="title title-p" />
+      
       <div className="project-container">
         {/* <motion.div
           ref={carousel}
@@ -87,6 +102,8 @@ function Projects() {
                   name={projectDetails.name}
                   description={projectDetails.description}
                   link={projectDetails.link}
+                  maintenance = {projectDetails.maintenance}
+                  tech = {projectDetails.tech}
                   // children={ <i class="fa fa-github" aria-hidden="true"></i>}
                   className="project-card"
                 />

@@ -5,6 +5,7 @@ import "../styles/App.css";
 
 import Navbar from "./Navbar";
 import Lateralbar from "./Lateralbar";
+import Footer from "./footer";
 
 import Home from "../pages/home";
 import Projects from "../pages/projects";
@@ -80,48 +81,49 @@ function App() {
 
   const style = { display: "flex", flexDirection: "column" };
   return (
-    <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
-      <div className="header">
-        <Navbar
-          click={handleClick}
-          ligthOrDarkMode={!isDarkMode}
-          pathname={pathname}
-        />
-      </div>
+    <div className="app-wrapper">
+      <div className={`App ${isDarkMode ? "dark-theme" : "light-theme"}`}>
+        <div className="header">
+          <Navbar
+            click={handleClick}
+            ligthOrDarkMode={!isDarkMode}
+            pathname={pathname}
+          />
+        </div>
 
-      <div className="main" style={style}>
-        <Lateralbar pathname={pathname} />
-        <section id="home">
-          <div className="section-portfolio">
-            <Home 
-              isDarkMode={isDarkMode} 
-              isOver={isOver}
-              handleMouseDown={handleMouseDown}
-              handleMouseOver={handleMouseOver}
-            />
-          </div>
-        </section>
-        <section id="about">
-          <div className="section-portfolio">
-            <About />
-          </div>
-        </section>
-        <section id="projects">
-          <div className="section-portfolio">
-            <Projects />
-          </div>
-        </section>
-        <section id="contact">
-          <div className="section-portfolio">
-            <Contact 
-              isOver={isOver}
-              handleMouseDown={handleMouseDown}
-              handleMouseOver={handleMouseOver}
-            />
-          </div>
-        </section>
+        <div className="main" style={style}>
+          <Lateralbar pathname={pathname} />
+          <section id="home">
+            <div className="section-portfolio">
+              <Home
+                isDarkMode={isDarkMode}
+                isOver={isOver}
+                handleMouseDown={handleMouseDown}
+                handleMouseOver={handleMouseOver}
+              />
+            </div>
+          </section>
+          <section id="about">
+            <div className="section-portfolio">
+              <About />
+            </div>
+          </section>
+          <section id="projects">
+            <div className="section-portfolio">
+              <Projects />
+            </div>
+          </section>
+          <section id="contact">
+            <div className="section-portfolio">
+              <Contact
+                isOver={isOver}
+                handleMouseDown={handleMouseDown}
+                handleMouseOver={handleMouseOver}
+              />
+            </div>
+          </section>
 
-        {/* <BrowserRouter>
+          {/* <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
@@ -129,9 +131,11 @@ function App() {
                     <Route path="/contact" element={<Contact />} />.
                 </Routes>
             </BrowserRouter> */}
+        </div>
       </div>
-      <div className="footer">
-        <footer>je suis le footer</footer>
+
+      <div className={`footer ${isDarkMode ? "dark-theme" : "light-theme"}`}>
+        <Footer></Footer>
       </div>
     </div>
   );

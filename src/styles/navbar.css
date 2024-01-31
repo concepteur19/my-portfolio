@@ -1,6 +1,6 @@
 .nav-bar {
   width: 100%;
-  height: 8%;
+  height: 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10000;
 }
 .nav-bar a.active {
   color: #4866ff;
@@ -25,13 +25,13 @@
   font-size: 15px;
   font-weight: bold;
   font-family: "Poppins";
-  margin-left: 3vw;
+  margin-left: 9em;
   z-index: 10;
 }
 
 .nav-menu {
   margin-left: auto;
-  margin-right: 1.5vw;
+  margin-right: 4em;
 }
 
 /*ajouter margin-left*/
@@ -147,13 +147,13 @@
   .nav-menu {
     position: absolute;
     right: -10px;
-    top: 56px;
+    top: 0px;
     background-color: #ebebfffc;
     width: 0;
     height: calc(100vh - 56px);
     transition: all 0.3s ease-in;
     overflow: hidden;
-    text-align: center;
+    /* text-align: end; */
   }
 
   .nav-menu.expanded {
@@ -163,6 +163,8 @@
   .nav-menu ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-menu ul li {

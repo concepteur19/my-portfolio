@@ -7,7 +7,7 @@
   justify-content: center; 
   align-items: center;
   text-align: center;
-  padding: 8% 4%;
+  padding: 9% 4%;
 }
 
 .about-container{
@@ -40,7 +40,7 @@
 }
 
 .card{
-  box-shadow: 0 0px 6px rgba(137, 137, 137, 0.349);
+  box-shadow: 0 1px 10px #4866ff5b;
   border-radius: 7px;
   margin-inline: 12px;
 }
@@ -107,6 +107,10 @@
   /* margin-left: 200px; */
 }
 
+.skillsSection {
+  display: flex;
+}
+
 .titleskillssection h3 {
   font-size: 17px;
   font-weight: 400;
@@ -164,16 +168,18 @@
   font-size: 0.85rem;
   border-radius: 7px;
   padding: 0 0px 50px 50px;
-  box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
+  box-shadow: 0 1px 10px #4866ff5b;
 }
 
 .education {
   font-size: 0.85rem;
   border-radius: 7px;
   padding: 0 0px 50px 50px;
-  box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
+  box-shadow: 0 1px 10px #4866ff5b;
   /* height: max-content; */
 }
+
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1219px) {
@@ -205,7 +211,10 @@
 
   /* Tablet */
  @media (max-width: 768px) {
-  
+  .App {
+    width: 100%;
+  }
+
   .title-left h3{
     font-size: 1.3rem;
   }
@@ -215,16 +224,20 @@
 
 
 @media (max-width: 576px) {
+  .App {
+    width: 100%;
+  }
+
   .work {
     font-size: 0.7rem;
     padding: 0 0px 30px 30px;
-    box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
+    box-shadow: 0 1px 10px #4866ff5b;
   }
   
   .education {
     font-size: 0.7rem;
     padding: 0 0px 30px 30px;
-    box-shadow: 0 1px 12px rgba(137, 137, 137, 0.349);
+    box-shadow: 0 1px 10px #4866ff5b;
     /* height: max-content; */
   }
   
@@ -278,14 +291,32 @@
   .title-left h3{
     font-size: 1.2rem;
   }
+
+  /* SKILLS SECTION */
+  .skillsSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* END SKILL */
 }
 
 @media (max-width: 499px) {
+  .App {
+    width: 100%;
+  }
+
+  .work {
+    padding: 0 0px 20px 10px;
+  }
+  
+  .education {
+    padding: 0 0px 20px 20px;
+  }
 
   .about-container .education-container{
     display: grid;
-    /* grid-row-gap: 10px; */
-    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
   }
 
   .card{
@@ -293,7 +324,8 @@
   }
 
   .card-stats {
-    padding: 20px 17px;
+    padding: 20px 15px;
+    margin: 5px;
   }
 
   .about-container .ex-cl-pr{
@@ -305,9 +337,11 @@
   }
   
   .work  .education-container {
+    border: none;
+    box-shadow: none;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 0px;
     grid-row-gap: 10px;
 
     padding: 5px;

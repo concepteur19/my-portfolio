@@ -173,7 +173,7 @@ function About() {
           <span className="before-title">What skills i have</span>
           <Title title="Skills" class="title title-s" > </Title>
 
-          <div style={{display: 'flex'}}> 
+          <div className="skillsSection"> 
             <div className="card card-skills">
               <Title title="Front-end Development" class="titles-skills" />
 
@@ -207,14 +207,14 @@ function About() {
           
         </div>
 
-        <div className="about-container" >
+        {/* <div className="about-container" >
           <span className="before-title">Which services i provide</span>
           <Title title="Services" class="title title-s" />
           animation: fade-in-contact 1s ease-in forwards animation:
           fade-in-contact 1s ease-in forwards; animation: fade-in-contact 1s
           ease-in forwards; animation: fade-in-contact 1s ease-in forwards;
           ease-in forwards;
-        </div>
+        </div> */}
       </div>
     </div>
   );

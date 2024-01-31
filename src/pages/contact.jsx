@@ -33,13 +33,13 @@ function Contact(props) {
               transition={{ type: "tween", duration: 1 }}
             //</div>initial={{ y: 0, x: 90 }}
             >
-              <h1 className="h1">
+              <h3 className="h1">
                 If you want to contact me, <br /> complete the form.{" "}
-              </h1>
+              </h3>
             </motion.div>
           </div>
 
-          <div className="sm-title">
+          {/* <div className="sm-title">
             <motion.div
               //animate={{ y: 400, x: 160 }}
               transition={{ type: "tween", duration: 1 }}
@@ -53,7 +53,7 @@ function Contact(props) {
             <SocialMedia
               style={styles}
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="container-form">
@@ -85,6 +85,7 @@ function Contact(props) {
                   color: !props.isOver ? "#f5f5f5" : "#191919",
                   boxShadow: "none",
                   width: "25%",
+                  cursor: "pointer"
                 }}
               />
             </div>
